@@ -1,0 +1,46 @@
+// this file contains
+// custom mixins
+// sass functions
+
+// variables may be factored into a theme file.
+$bevel-color-light: rgba($white, 0.3);
+$bevel-color-dark: rgba($blackblue, 0.3);
+$bevel-light-border: 1px solid $bevel-color-light;
+$bevel-dark-border: 1px solid $bevel-color-dark;
+
+@mixin fill( $position:"" ) {
+  @if $position == "" { $position: absolute; }
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} // @mixin absolute-fill
+
+
+@mixin clearfix( $pseudo:"" ) {
+  @if $pseudo == "" { $pseudo: after; }
+  &:#{ $pseudo } {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1px;
+    clear: both;
+    position: relative;
+  } // &:pseudo
+} // @mixin clearfix
+
+@mixin bevel( $direction ) {
+  @if $direction == "vertical" {
+    &:not(:first-of-type) { border-top: $bevel-light-border; }
+    &:not(:last-of-type) { border-bottom: $bevel-dark-border; }
+  }
+  @else if $direction == "horizontal" {
+    display: inline-block;
+    &:not(:first-of-type) { border-left: $bevel-light-border; }
+    &:not(:last-of-type) { border-right: $bevel-dark-border; }
+  }
+
+} // @mixin bevel

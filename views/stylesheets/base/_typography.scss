@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+$sans-serif: 'PT Sans', sans-serif;
+$serif: serif;
+$mono: mono;
+
+$body-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$blcokquote-font-family: $serif;
+$pre-code-font-family: $mono;
+
+$base-font-size: 16px;
+$blockquote-font-size: 1.3em;
+$pre-code-font-size: 1em;
+$small-font-size: 0.8em;
+
+$blockquote-font-style: italic;
+$em-font-style: italic;
+$strong-font-style: bold;
+
+@mixin light-text {
+  color: $white;
+  text-shadow: 0 -1px rgba($blackblue, .3);
+}
+
+@mixin dark-text {
+  color: $blackblue;
+  text-shadow: 0 -1px rgba($white, .3);
+}
+
+html {
+  font-family: $body-font-family;
+  font-size: $base-font-size;
+  @include dark-text;
+}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.0em; }
+h6 { font-size: 0.8em; }
+h1,h2,h3,h4,h5, h6 { family: $header-font-family; }
+

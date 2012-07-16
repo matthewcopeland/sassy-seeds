@@ -1,0 +1,13 @@
+$link-color: $blackblue;
+$link-hover-color: lighten($link-color, 10%);
+$link-text-shadow: none;
+
+@mixin link {
+  text-shadow: $link-text-shadow;
+  @include transition( color .2s );
+  &, &:visited { color: $link-color; }
+  &:hover { color: $link-hover-color; }
+} // @mixin link
+
+// apply the default style to the anchor tag
+a { @include link; }

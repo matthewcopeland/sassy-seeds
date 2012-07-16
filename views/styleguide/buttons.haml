@@ -1,0 +1,32 @@
+%h1 Button Styles
+
+.single-button
+  %h2 Default - @include button;
+  %p Buttons default to this style when no argument for color has been given.
+  %p You can set the default-color at the top of _buttons.scss
+  
+  %a{:href=>"javascript:void(0)"}> Anchor Tag
+  %button> Button Tag
+  %input{ :type=>"submit", :value=>"Submit Input"}>
+
+.multi-button
+  %h2 Multi-buttons - @include multi-button
+  - 2.times do
+    %a{:href=>"javascript:void(0)"}> Anchor Tag
+.multi-button
+  - 2.times do
+    %button> Button Tag
+.multi-button
+  - 2.times do
+    %input{ :type=>"submit", :value=>"Submit Input"}>
+
+
+.multi-button
+  - 3.times do
+    %a{:href=>"javascript:void(0)"}> Anchor Tag
+.multi-button
+  - 3.times do
+    %button> Button Tag
+.multi-button
+  - 3.times do
+    %input{ :type=>"submit", :value=>"Submit Input"}>

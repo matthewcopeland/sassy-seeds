@@ -1,0 +1,34 @@
+// variables may be factored out into a theme file for flexibility
+$text-input-border-color: $blackblue;
+$text-input-border-color-hover: lighten($text-input-border-color, 5);
+$text-input-bg: $white;
+$text-input-border: 1px solid $text-input-border-color;
+$text-input-padding: 5px 10px;
+$text-input-border-radius: $border-radius;
+$text-input-box-shadow: inset 0 1px 3px 0 rgba(0,0,0, 0.4);
+
+@mixin text-input {
+    display: inline-block;
+    padding: $text-input-padding;
+    text-align: left;
+    vertical-align: middle;
+    border: $text-input-border;
+    @include border-radius( $text-input-border-radius );
+    background: $text-input-bg;
+    @include box-shadow( $text-input-box-shadow );
+    &:hover, &:focus { border-color: $text-input-border-color-hover; }
+} // @mixin text-input
+
+
+// apply the text-input style to inputs and textareas.
+input {
+  &[type=text], 
+  &[type=password], 
+  &[type=email], 
+  &[type=number], 
+  &[type=search] { 
+    @include text-input; 
+    } // type=[] 
+} // input
+
+textarea { @include text-input; }

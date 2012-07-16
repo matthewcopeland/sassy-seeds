@@ -1,0 +1,6 @@
+$header-bg: $darkblue;
+
+#main-header {
+  background: $header-bg;
+  @include light-text;
+}

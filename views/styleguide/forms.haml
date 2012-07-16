@@ -1,0 +1,27 @@
+%h1 Forms
+
+
+%input{ :type=>"text", :placeholder=>"Text Input" }
+
+%input{ :type=>"email", :placeholder=>"Email Input" }
+
+%input{ :type=>"password", :placeholder=>"Password Input" }
+
+%input{ :type=>"number", :placeholder=>"Number Input" }
+
+%input{ :type=>"search", :placeholder=>"Search Input" }
+
+%textarea{ :placeholder=>"Textarea." }
+
+= partial :'styleguide/forms/_select'
+
+%fieldset
+  %legend Checkboxes
+  = partial :'styleguide/forms/_checkbox'
+
+%fieldset
+  %legend Radios
+  = partial :'styleguide/forms/_radio'
+
+
+%input{ :type=>"submit", :value=>"Submit Input"}
