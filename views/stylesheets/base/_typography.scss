@@ -28,12 +28,6 @@ $strong-font-style: bold;
   text-shadow: 0 -1px rgba($white, .3);
 }
 
-html {
-  font-family: $body-font-family;
-  font-size: $base-font-size;
-  @include dark-text;
-}
-
 h1 { font-size: 1.8em; }
 h2 { font-size: 1.6em; }
 h3 { font-size: 1.4em; }

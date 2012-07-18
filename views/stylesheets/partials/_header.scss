@@ -1,6 +1,16 @@
-$header-bg: $darkblue;
+$header-bg: linear-gradient( top, $darkblue, $blackblue );
 
 #main-header {
-  background: $header-bg;
+  @include background( $header-bg );
   @include light-text;
-}
+
+  h1, nav { display: inline-block; }
+
+  nav a {
+    display: inline-block;
+    padding: 3px 10px;
+    text-align: center;
+    @include nav-link;
+  } // nav a
+
+} // #main-header

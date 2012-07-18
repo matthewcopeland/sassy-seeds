@@ -7,7 +7,7 @@
 $bg-color: $off-white;
 $blockquote-padding: 20px 10px;
 $border-radius: 4px;
-
+$noise: url('/images/noise.png');
 // some elements need their own files.
 @import "elements/buttons";
 @import "elements/links";
@@ -15,7 +15,12 @@ $border-radius: 4px;
 @import "elements/forms";
 
 
-html { background: $bg-color; }
+html {
+  background: $bg-color $noise;
+  font-family: $body-font-family;
+  font-size: $base-font-size;
+  @include dark-text;
+}
 
 em { font-style: $em-font-style; }
 strong { font-weight: $strong-font-style; }

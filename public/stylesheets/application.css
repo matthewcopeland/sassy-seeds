@@ -96,13 +96,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-html {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  color: #162934;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
-}
-
 h1 {
   font-size: 1.8em;
 }
@@ -173,10 +166,10 @@ a {
   transition: color 0.2s;
 }
 a, a:visited {
-  color: #162934;
+  color: #29aae2;
 }
 a:hover {
-  color: #254558;
+  color: #56bce8;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=number], input[type=search] {
@@ -224,7 +217,11 @@ textarea:hover, textarea:focus {
 }
 
 html {
-  background: #fefefe;
+  background: #fefefe url("/images/noise.png");
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #162934;
+  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
 }
 
 em {
@@ -261,9 +258,31 @@ code {
 }
 
 #main-header {
-  background: #006fab;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006fab), color-stop(100%, #162934));
+  background: -webkit-linear-gradient(top, #006fab, #162934);
+  background: -moz-linear-gradient(top, #006fab, #162934);
+  background: -o-linear-gradient(top, #006fab, #162934);
+  background: -ms-linear-gradient(top, #006fab, #162934);
+  background: linear-gradient(top, #006fab, #162934);
   color: white;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
+}
+#main-header h1, #main-header nav {
+  display: inline-block;
+}
+#main-header nav a {
+  display: inline-block;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 1.2em;
+  text-shadow: 0 -1px #0e4a64;
+  display: inline-block;
+}
+#main-header nav a:not(:first-of-type) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+#main-header nav a:not(:last-of-type) {
+  border-right: 1px solid rgba(22, 41, 52, 0.3);
 }
 
 #main-footer {
