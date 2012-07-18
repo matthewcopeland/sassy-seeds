@@ -501,6 +501,9 @@ code {
 #styleguide #lists ul:nth-of-type(7) li {
   padding: 5px 10px;
 }
+#styleguide #forms > div {
+  margin: 10px 0;
+}
 
 @media only screen and (max-width: 1024px ) {
   -webkit-text-size-adjust: none;
