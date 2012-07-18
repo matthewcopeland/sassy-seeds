@@ -177,21 +177,26 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
   padding: 5px 10px;
   text-align: left;
   vertical-align: middle;
-  border: 1px solid #162934;
+  border: 1px solid #e5e5e5;
+  border-bottom-color: white;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  background: white;
+  background: #f6f6f6;
   -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
 }
-input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, input[type=password]:focus, input[type=email]:hover, input[type=email]:focus, input[type=number]:hover, input[type=number]:focus, input[type=search]:hover, input[type=search]:focus {
-  border-color: #1e3746;
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=search]:focus {
+  background: #fefefe;
 }
 
 textarea {
@@ -199,21 +204,26 @@ textarea {
   padding: 5px 10px;
   text-align: left;
   vertical-align: middle;
-  border: 1px solid #162934;
+  border: 1px solid #e5e5e5;
+  border-bottom-color: white;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  background: white;
+  background: #f6f6f6;
   -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
 }
-textarea:hover, textarea:focus {
-  border-color: #1e3746;
+textarea:focus {
+  background: #fefefe;
 }
 
 html {
