@@ -1,8 +1,8 @@
-/* css reset based on the work by eric meyer */
+// css reset based on the work by eric meyer
 html,body{position:relative;;min-height:100%;width:100%;height:100%;line-height:1;}
 html,body,div,span,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,output, applet,object,iframe,p,blockquote,pre,code,a,abbr,acronym,address,big,cite,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,del,dfn,table,tbody,tfoot,thead,tr,th,td,tt,var,b,u,i,center,dl,dt,dd,ul,ol,li,label,legend,caption,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea, keygen, select,button,button::-moz-focus-inner,isindex,hr{margin:0;padding:0;} 
 table {border-collapse:collapse;border-spacing:0;}
-fieldset, img, abbr, acronyminput, textarea{border:0;border:none;outline:none;}
+fieldset, img, abbr, acronyminput, input,textarea{border:0;border:none;outline:none;}
 address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
 ol,ul,li{list-style:none;list-style-type:none;}
 caption,th,input,textarea {text-align:left;}
@@ -13,11 +13,11 @@ a, a:hover, a:visited, a:active, a:link {text-decoration:none;}
 form {display: block;}
 textarea:focus, input:focus, select:focus {outline: none;}
 input, textarea, keygen, select, button, isindex { font: inherit; color: inherit; letter-spacing: inherit; word-spacing: inherit; line-height: inherit; text-transform: none; text-indent: 0; text-shadow: inherit; display: inline-block; text-align: inherit; border: none; }
-/* html5 block elements for IE. Stop using IE. */
+// html5 block elements
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 .clear, .clearfloat {clear:both;}
 
-/* save your sanity */
+// save your sanity
 * { 
   -webkit-box-sizing: border-box;
    -khtml-box-sizing: border-box;
