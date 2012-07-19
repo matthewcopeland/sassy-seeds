@@ -1,0 +1,44 @@
+#styleguide { 
+  text-align: center;
+
+  > article {
+    padding: $page-padding 0;
+    @include bevel( vertical );
+    > h1:first-of-type { margin-bottom: 10px; }
+  } // > div
+
+
+  .color-palette  figure {
+    margin: 4px;
+    @include palette-swatch( 100px );
+  } // .color-palette figure
+
+  #typography > * { margin: 10px 0; }
+
+  .single-button {
+    a, button, input[type=submit] { @include button; margin: 10px; }
+  } // .single-button
+
+  .multi-button {
+    a, button, input[type=submit] { @include multi-button; margin: 10px 0; }
+  } // .multi-button
+
+
+  #lists ul {
+    margin: 10px 0;
+    &:nth-of-type(3) { @include list-style( disc ); }
+    &:nth-of-type(4) { @include list-style( decimal ); }
+    &:nth-of-type(5) { @include list-style( lower-alpha ); }
+    &:nth-of-type(6) { @include list-style( bevel-vertical ); }
+    &:nth-of-type(7) { 
+      @include list-style( bevel-horizontal );
+      li { padding: 5px 10px; }
+    } // &:nth-of-type(7)
+  } // #lists ul
+
+
+  #forms {
+    > div { margin: 10px 0; }
+  } // #forms
+
+} // #styleguide

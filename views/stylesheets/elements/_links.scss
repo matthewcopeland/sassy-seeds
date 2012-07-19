@@ -1,9 +1,8 @@
-$link-color: $lightblue;
-$link-hover-color: lighten($link-color, 10);
-$link-text-shadow: none;
-
-$nav-link-font-size: 1.2em;
-$nav-link-text-shadow: 0 -1px darken($link-color, 30);
+// $link-color: $lightblue;
+// $link-hover-color: lighten($link-color, 10);
+// $link-text-shadow: none;
+// $nav-link-font-size: 1.2em;
+// $nav-link-text-shadow: 0 -1px darken($link-color, 30);
 
 @mixin link {
   text-shadow: $link-text-shadow;
@@ -11,10 +10,6 @@ $nav-link-text-shadow: 0 -1px darken($link-color, 30);
   &, &:visited { color: $link-color; }
   &:hover { color: $link-hover-color; }
 } // @mixin link
-
-// apply the default style to the anchor tag
-a { @include link; }
-
 
 @mixin nav-link {
   font-size: $nav-link-font-size;

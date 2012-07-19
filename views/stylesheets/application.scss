@@ -1,12 +1,13 @@
 // this the main stylesheet
-// all other stylesheets are a child of this file.
-
-@import "base/reset";
+// keep these files in this order.
 @import "compass/utilities";
 @import "compass/css3";
 
+// visual
 @import "base";
+@import "themes/theme";
+
 @import "elements";
-@import "layout";
-@import "partials";
-@import "rwd";
+
+// positional
+@import "partials_and_pages";

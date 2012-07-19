@@ -1,32 +1,42 @@
 // visual styles for basic elemens
 // no positional styling
 
-// element variables
-// variables could be factored out
-// and placed in a theme.scss file to DRY it out.
-$body-bg-color: $off-white;
-$blockquote-padding: 20px 10px;
-$border-radius: 4px;
-$noise: url('/images/noise.png');
-// some elements need their own files.
+
+// global variables used by elements. 
+// these can be overriden in the theme file.
+// $body-bg-color: $off-white;
+// $blockquote-padding: 20px 10px;
+// $border-radius: 4px;
+// $noise: url('/images/noise.png');
+
+
+// some element-styles need their own files
 @import "elements/buttons";
 @import "elements/links";
 @import "elements/lists";
 @import "elements/forms";
 
 
-html {
+@mixin body-style {
   background: $body-bg-color $noise;
   font-family: $body-font-family;
   font-size: $base-font-size;
-  @include dark-text;
+  line-height: $base-line-height;
+  color: $body-text-color;
+  text-shadow: $body-text-shadow;
 }
 
-em { font-style: $em-font-style; }
-strong { font-weight: $strong-font-style; }
-small { font-size: $small-font-size; }
+@mixin header-style {
+  @include background( $header-bg );
+  color: $header-text-color;
+  text-shadow: $header-text-shadow;
+}
 
-blockquote {
+@mixin em-style { font-style: $em-font-style; }
+@mixin strong-style { font-weight: $strong-font-style; }
+@mixin small-style { font-size: $small-font-size; }
+
+@mixin blockquote-style {
   padding: $blockquote-padding;
   font-family: $blcokquote-font-family;
   font-style: $blockquote-font-style;
@@ -37,8 +47,30 @@ blockquote {
   } // &:before
 } // blockquote
 
-code {
+@mixin code-style {
   text-align: left;
   font-family: $pre-code-font-family;
   font-size: $pre-code-font-size;
 } // pre, code
+
+
+// apply the visual styles to your elements.
+// comment these out to use different mixins.
+html { @include body-style; }
+a { @include link; }
+blockquote { @include blockquote-style; }
+em { @include em-style; }
+strong { @include strong-style; }
+code { @include code-style; }
+small { @include small-style; }
+button, input[type=submit] { @include button; }
+textarea { @include text-input; }
+input {
+  &[type=text], 
+  &[type=password], 
+  &[type=email], 
+  &[type=number], 
+  &[type=search] { 
+    @include text-input; 
+    } // type=[] 
+} // input

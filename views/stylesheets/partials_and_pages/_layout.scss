@@ -1,0 +1,18 @@
+$page-padding: 20px;
+#main-header, #main, #main-footer { padding: $page-padding; }
+
+
+// set to true to choose use a fixed-width
+$fixedwidth: false;
+$fixed-width-size: 980px;
+
+@if $fixedwidth == true {
+  body { 
+    position: relative;
+    width: $fixed-width-size;
+    margin: 20px auto;
+    min-height: 100%;
+    height: auto;
+    @include box-shadow( 0 2px 10px 0 rgba(0,0,0, 0.7) );
+  } // body
+} // @if

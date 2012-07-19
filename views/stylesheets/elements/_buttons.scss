@@ -1,21 +1,22 @@
-// variables can removed and added to a _theme.scss if desired.
-$button-padding: 8px 14px;
-$button-border-radius: $border-radius;
-$button-shadow: inset 0 1px 3px 0 rgba($blackblue, 0.7);
-$button-placeholder-bg: $darkblue; // pick a default button bg-color.
+// // variables can removed and added to a _theme.scss if desired.
+// $button-padding: 8px 14px;
+// $button-border-radius: $border-radius;
+// $button-shadow: inset 0 1px 3px 0 rgba($blackblue, 0.7);
+// $button-placeholder-bg: $darkgreen; // pick a default button bg-color.
 
-// your color palette may have a variet of blues and greens.
-// to help establish structure around button-gradients, use $variables to establish 
-// a simple naming convention.
-$green-button:  darken($lightgreen, 10);
-$red-button:    $brick;
-$cancel-button: $red-button;
-$go-button:     $green-button;
+// // your color palette may have a variet of blues and greens.
+// // to help establish structure around button-gradients, use $variables to establish 
+// // a simple naming convention.
+// $green-button:  darken($lightgreen, 10);
+// $red-button:    $brick;
+// $cancel-button: $red-button;
+// $go-button:     $green-button;
 
 
 @mixin button( $color:"" ) {
   @if $color == "" { $color: $button-placeholder-bg; } // if a color isn't specified, then use the default button color
   display: inline-block;
+  cursor: pointer;
   padding: $button-padding;
   @include border-radius( $button-border-radius );
   @include box-shadow( $button-shadow );
@@ -31,6 +32,3 @@ $go-button:     $green-button;
   &:first-of-type { @include border-radius( $button-border-radius 0 0 $button-border-radius ); }
   &:last-of-type  { @include border-radius( 0 $button-border-radius $button-border-radius 0 ); }
 }
-
-// apply a default visual-style for buttons
-button, input[type=submit] { @include button; }

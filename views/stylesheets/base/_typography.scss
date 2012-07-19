@@ -2,13 +2,14 @@
 
 $sans-serif: 'PT Sans', sans-serif;
 $serif: serif;
-$mono: mono;
+$mono: "lucida console", mono;
 
 $body-font-family: $sans-serif;
 $header-font-family: $sans-serif;
 $blcokquote-font-family: $serif;
 $pre-code-font-family: $mono;
 
+$base-line-height: 1em;
 $base-font-size: 16px;
 $blockquote-font-size: 1.3em;
 $pre-code-font-size: 1em;
@@ -18,14 +19,19 @@ $blockquote-font-style: italic;
 $em-font-style: italic;
 $strong-font-style: bold;
 
+$light-text-color: $white;
+$light-text-shadow: 0 -1px rgba($blackblue, .3);
+$dark-text-color: $blackblue;
+$dark-text-shadow: 0 -1px rgba($white, .3);
+
 @mixin light-text {
-  color: $white;
-  text-shadow: 0 -1px rgba($blackblue, .3);
+  color: $light-text-color;
+  text-shadow: $light-text-shadow;
 }
 
 @mixin dark-text {
   color: $blackblue;
-  text-shadow: 0 -1px rgba($white, .3);
+  text-shadow: $dark-text-shadow;
 }
 
 h1 { font-size: 1.8em; }
@@ -34,5 +40,5 @@ h3 { font-size: 1.4em; }
 h4 { font-size: 1.2em; }
 h5 { font-size: 1.0em; }
 h6 { font-size: 0.8em; }
-h1,h2,h3,h4,h5, h6 { family: $header-font-family; }
+h1,h2,h3,h4,h5, h6 { font-family: $header-font-family; }
 

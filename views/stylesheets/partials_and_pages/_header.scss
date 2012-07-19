@@ -1,0 +1,12 @@
+#main-header {
+  @include header-style;
+  h1, nav { display: inline-block; }
+
+  nav a {
+    display: inline-block;
+    padding: 3px 10px;
+    text-align: center;
+    @include nav-link;
+  } // nav a
+
+} // #main-header
