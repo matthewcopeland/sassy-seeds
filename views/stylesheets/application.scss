@@ -4,10 +4,9 @@
 @import "compass/css3";
 
 // visual
-@import "base";
-@import "themes/theme";
-
-@import "elements";
+@import "base"; // base supplies brand-variables and utilities
+@import "themes/themes"; // themes use the base variables
+@import "elements"; // elements use the theme variables
 
 // positional
 @import "partials_and_pages";

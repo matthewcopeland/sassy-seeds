@@ -1,15 +1,6 @@
 // visual styles for basic elemens
 // no positional styling
 
-
-// global variables used by elements. 
-// these can be overriden in the theme file.
-// $body-bg-color: $off-white;
-// $blockquote-padding: 20px 10px;
-// $border-radius: 4px;
-// $noise: url('/images/noise.png');
-
-
 // some element-styles need their own files
 @import "elements/buttons";
 @import "elements/links";

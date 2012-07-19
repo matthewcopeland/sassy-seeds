@@ -1,33 +1,20 @@
-// // variables can removed and added to a _theme.scss if desired.
-// $button-padding: 8px 14px;
-// $button-border-radius: $border-radius;
-// $button-shadow: inset 0 1px 3px 0 rgba($blackblue, 0.7);
-// $button-placeholder-bg: $darkgreen; // pick a default button bg-color.
+// one button mixin to rule them all.
 
-// // your color palette may have a variet of blues and greens.
-// // to help establish structure around button-gradients, use $variables to establish 
-// // a simple naming convention.
-// $green-button:  darken($lightgreen, 10);
-// $red-button:    $brick;
-// $cancel-button: $red-button;
-// $go-button:     $green-button;
-
-
-@mixin button( $color:"" ) {
-  @if $color == "" { $color: $button-placeholder-bg; } // if a color isn't specified, then use the default button color
+@mixin button( $bg-color:"", $text-color:"" ) {
+  @if $bg-color == "" { $bg-color: $button-default-bg; } // if a color isn't specified, then use the default button color
   display: inline-block;
   cursor: pointer;
   padding: $button-padding;
+  @include light-text;
   @include border-radius( $button-border-radius );
   @include box-shadow( $button-shadow );
-  @include light-text;
-  @include background( linear-gradient(top, $color, darken($color, 8) ) ); 
-  &:hover, &:focus { @include background( linear-gradient( top, lighten($color, 10), darken($color, 8) ) ); }
-  &:active { @include background( darken($color, 5) ); }
+  @include background( linear-gradient(top, $bg-color, darken($bg-color, 8) ) ); 
+  &:hover, &:focus { @include background( linear-gradient( top, lighten($bg-color, 10), darken($bg-color, 8) ) ); }
+  &:active { @include background( darken($bg-color, 5) ); }
 } // @mixin button
 
-@mixin multi-button( $color: "" ) {
-  @include button( $color );
+@mixin multi-button( $bg-color: "" ) {
+  @include button( $bg-color );
   @include border-radius( 0 );
   &:first-of-type { @include border-radius( $button-border-radius 0 0 $button-border-radius ); }
   &:last-of-type  { @include border-radius( 0 $button-border-radius $button-border-radius 0 ); }
