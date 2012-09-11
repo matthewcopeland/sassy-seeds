@@ -1,9 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200italic,100italic);
+// exo
+// http://www.google.com/webfonts#UsePlace:use/Collection:Exo:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic
+// imported in application.scss per w3 rules: https://github.com/chriseppstein/compass/issues/639
 
 //---------------------------------
 // font-families
 $sans-fallback: Arial, Sans-Serif;
-$exo: 'Exo' $sans-fallback;
+$exo: 'Exo', $sans-fallback;
 $sans: $exo;
 $serif: serif;
 $mono: "lucida console", mono;

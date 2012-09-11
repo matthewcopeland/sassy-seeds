@@ -1,3 +1,4 @@
+@import url(http:/\/fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200italic,100italic);
 html, body {
   position: relative;
   min-height: 100%;
@@ -95,7 +96,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   box-sizing: border-box;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200italic,100italic);
 body {
   background: #333333 url("/images/noise.png");
   font-size: 12px;
@@ -103,7 +103,7 @@ body {
   font-weight: 400;
   color: #cdcdcd;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
-  font-family: "Exo" Arial, Sans-Serif;
+  font-family: "Exo", Arial, Sans-Serif;
 }
 
 h1 {
