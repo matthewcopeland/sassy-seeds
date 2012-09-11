@@ -7,61 +7,59 @@
 @import "elements/lists";
 @import "elements/forms";
 
-
 @mixin body-style {
-  background: $body-bg-color $noise;
-  font-family: $body-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $body-text-color;
+  background: $body-bg;
+  @include typestyle( bodycopy );
   text-shadow: $body-text-shadow;
-}
+  font-family: $body-font-family;
+}//@mixin
 
-@mixin header-style {
-  @include background( $header-bg );
-  color: $header-text-color;
-  text-shadow: $header-text-shadow;
-}
+@mixin hr-style {
+  border-top: $bevel-dark-border;
+  border-bottom: $bevel-light-border;
+}//@mixin
 
 @mixin em-style { font-style: $em-font-style; }
-@mixin strong-style { font-weight: $strong-font-style; }
-@mixin small-style { font-size: $small-font-size; }
+@mixin strong-style { font-weight: $bold; }
 
+
+$blockquote-padding: 20px 10px;
 @mixin blockquote-style {
   padding: $blockquote-padding;
-  font-family: $blcokquote-font-family;
-  font-style: $blockquote-font-style;
-  font-size: $blockquote-font-size;
-  &:before, &:after {
-    content: " \"\ ";
-    padding: $blockquote-padding;
-  } // &:before
-} // blockquote
+  &:before, &:after { content: " \"\ "; }
+}//@mixin
 
 @mixin code-style {
   text-align: left;
-  font-family: $pre-code-font-family;
-  font-size: $pre-code-font-size;
-} // pre, code
+}//@mixin
 
 
+//--------------------------------------------
 // apply the visual styles to your elements.
-// comment these out to use different mixins.
-html { @include body-style; }
+//
+body { @include body-style; }
+
+h1 { @include typestyle( h1 ); }
+h2 { @include typestyle( h2 ); }
+h3 { @include typestyle( h3 ); }
+h4 { @include typestyle( h4 ); }
+h5 { @include typestyle( h5 ); }
+h6 { @include typestyle( h6 ); }
+
+hr { @include hr-style; }
 a { @include link; }
 blockquote { @include blockquote-style; }
 em { @include em-style; }
 strong { @include strong-style; }
 code { @include code-style; }
-small { @include small-style; }
-button, input[type=submit] { @include button; }
+button, input[type=submit], input[type=button] { @include button; }
 textarea { @include text-input; }
 input {
-  &[type=text], 
-  &[type=password], 
-  &[type=email], 
-  &[type=number], 
-  &[type=search] { 
-    @include text-input; 
-    } // type=[] 
+  &[type=text],
+  &[type=password],
+  &[type=email],
+  &[type=number],
+  &[type=search] {
+    @include text-input;
+    } // type=[]
 } // input

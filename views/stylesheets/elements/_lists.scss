@@ -1,16 +1,8 @@
-// this mixin allows for custom list-styles
-// made with images, iconography, etc.
-// padding is applied evenly across all decorated-lists.
-
 @mixin list-style( $style ) {
-  @if $style == "bevel-vertical" {
-    > li { @include bevel( vertical); }
-  }
-  @else if $style == "bevel-horizontal" {
-    > li { @include bevel( horizontal); }
-  } 
-  @else if $style {
-    &, > li { list-style-type: $style; }
-       > li { padding-left: 5px; }
-  }
-}
+    &, > li {
+      list-style-type: $style;
+      list-style-position: inside;
+    }//&,>li
+
+    > li { padding-left: 5px; }
+}//@mixin

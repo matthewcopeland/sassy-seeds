@@ -11,20 +11,20 @@
 
 %ul
   - 4.times do
-    %li @include list( disc );
+    %li @include list( disc )
 
 %ul
   - 2.times do
-    %li @include list-style( decimal );
+    %li @include list-style( decimal )
 
 %ul
   - 4.times do
-    %li @include list( lower-alpha );
+    %li @include list( lower-alpha )
 
 %ul
   - 4.times do
-    %li @include beveled-horizontal
+    %li @include bevel( vertical )
 
 %ul
   - 4.times do
-    %li @include beveled-vertical
+    %li> @include bevel( horizontal )

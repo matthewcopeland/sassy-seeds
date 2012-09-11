@@ -1,21 +1,26 @@
 // one button mixin to rule them all.
+$button-padding: 8px 14px;
+$button-border-radius: $border-radius;
+$button-shadow: inset 0 1px 3px 0 rgba(0,0,0, 0.7);
+$button-default-text-color: $bodycopy-color;
+$button-default-text-shadow: $body-text-shadow;
 
-@mixin button( $bg-color:"", $text-color:"" ) {
-  @if $bg-color == "" { $bg-color: $button-default-bg; } // if a color isn't specified, then use the default button color
+@mixin button( $color: $button-default-bg-color, $type: "" ) {
   display: inline-block;
   cursor: pointer;
   padding: $button-padding;
-  @include light-text;
+  color: $button-default-text-color;
+  text-shadow: $button-default-text-shadow;
   @include border-radius( $button-border-radius );
   @include box-shadow( $button-shadow );
-  @include background( linear-gradient(top, $bg-color, darken($bg-color, 8) ) ); 
-  &:hover, &:focus { @include background( linear-gradient( top, lighten($bg-color, 10), darken($bg-color, 8) ) ); }
-  &:active { @include background( darken($bg-color, 5) ); }
-} // @mixin button
+  @include background( linear-gradient(top, $color, darken($color, 8) ) );
+  &:hover, &:focus { @include background( linear-gradient( top, lighten($color, 10), darken($color, 8) ) ); }
+  &:active { @include background( darken($color, 5) ); }
 
-@mixin multi-button( $bg-color: "" ) {
-  @include button( $bg-color );
-  @include border-radius( 0 );
-  &:first-of-type { @include border-radius( $button-border-radius 0 0 $button-border-radius ); }
-  &:last-of-type  { @include border-radius( 0 $button-border-radius $button-border-radius 0 ); }
-}
+  @if $type == multibutton {
+    @include border-radius( 0 );
+    &:first-of-type { @include border-radius( $button-border-radius 0 0 $button-border-radius ); }
+    &:last-of-type  { @include border-radius( 0 $button-border-radius $button-border-radius 0 ); }
+  }//@if
+
+} // @mixin button

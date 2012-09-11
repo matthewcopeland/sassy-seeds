@@ -1,12 +1,9 @@
 @mixin link {
-  text-shadow: $link-text-shadow;
   @include transition( color 0.2s );
   &, &:visited { color: $link-color; }
   &:hover { color: $link-hover-color; }
 } // @mixin link
 
 @mixin nav-link {
-  font-size: $nav-link-font-size;
-  text-shadow: $nav-link-text-shadow;
   @include bevel( horizontal );
 }

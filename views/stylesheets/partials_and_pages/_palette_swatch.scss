@@ -1,18 +1,18 @@
 $default-swatch-size: 100px;
 
 @mixin palette-swatch ( $size:"" ) {
-  
+
   // if a size isn't specified, use the default size.
   @if $size =="" { $size: $default-swatch-size; }
-  
+
   width: $size;
   height: $size;
   display: inline-block;
 
   @include border-radius( 50% );
-  @include box-shadow( 0 1px 2px 0 rgba($blackblue, 0.7) );
+  @include box-shadow( 0 1px 2px 0 rgba(0,0,0, 0.4) );
 
-  
+
   // todo use @function to count the number of colors in palette
   // and then use a @for loop to dynamically build this list.
   //

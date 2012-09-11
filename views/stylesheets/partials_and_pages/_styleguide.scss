@@ -1,4 +1,4 @@
-#styleguide { 
+#styleguide {
   text-align: center;
 
   > article {
@@ -16,23 +16,36 @@
   #typography > * { margin: 10px 0; }
 
   .single-button {
-    a, button, input[type=submit] { @include button; margin: 10px; }
+    a, button, input[type=submit] {
+      @include button;
+      margin: 10px;
+    }//a,button,input
   } // .single-button
 
   .multi-button {
-    a, button, input[type=submit] { @include multi-button; margin: 10px 0; }
+    a, button, input[type=submit] {
+      @include button( $type: multibutton );
+      margin: 10px 0;
+    }//a,button,input
   } // .multi-button
 
-
   #lists ul {
-    margin: 10px 0;
+    margin: 20px auto;
     &:nth-of-type(3) { @include list-style( disc ); }
     &:nth-of-type(4) { @include list-style( decimal ); }
     &:nth-of-type(5) { @include list-style( lower-alpha ); }
-    &:nth-of-type(6) { @include list-style( bevel-vertical ); }
-    &:nth-of-type(7) { 
-      @include list-style( bevel-horizontal );
-      li { padding: 5px 10px; }
+
+    &:nth-of-type(6) li {
+        @include bevel( vertical );
+        width: 300px;
+        padding: 10px 0;
+        margin: 0 auto;
+    }//&:nth-of-type
+
+    &:nth-of-type(7) li {
+      @include bevel( horizontal );
+      padding: 5px 10px;
+      display: inline-block;
     } // &:nth-of-type(7)
   } // #lists ul
 

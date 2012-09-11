@@ -1,44 +1,99 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200italic,100italic);
 
-$sans-serif: 'PT Sans', sans-serif;
+//---------------------------------
+// font-families
+$sans-fallback: Arial, Sans-Serif;
+$exo: 'Exo' $sans-fallback;
+$sans: $exo;
 $serif: serif;
 $mono: "lucida console", mono;
+$body-font-family: $sans;
 
-$body-font-family: $sans-serif;
-$header-font-family: $sans-serif;
-$blcokquote-font-family: $serif;
-$pre-code-font-family: $mono;
+//-------------------
+// font weights
+$light: 200;
+$book: 300;
+$normal: 400;
+$medium: 500;
+$demi: 600;
+$bold: 700;
+$extra-bold: 800;
+$ultra-bold: 900;
 
-$base-line-height: 1em;
-$base-font-size: 16px;
-$blockquote-font-size: 1.3em;
-$pre-code-font-size: 1em;
-$small-font-size: 0.8em;
-
+//--------------------------
+// font-styles
 $blockquote-font-style: italic;
 $em-font-style: italic;
-$strong-font-style: bold;
+$strong-font-weight: $bold;
 
+//-----------------------------
+// font-colors
 $light-text-color: $white;
-$light-text-shadow: 0 -1px rgba($blackblue, .3);
-$dark-text-color: $blackblue;
-$dark-text-shadow: 0 -1px rgba($white, .3);
+$dark-text-shadow: 0 -1px rgba($blackblue, .3);
+$dark-text-color: $bodycopy-dark-text-color;
+$light-text-shadow: 0 -1px rgba($white, .3);
 
 @mixin light-text {
   color: $light-text-color;
-  text-shadow: $light-text-shadow;
-}
+  text-shadow: $dark-text-shadow;
+}//@mixin
 
 @mixin dark-text {
-  color: $blackblue;
-  text-shadow: $dark-text-shadow;
-}
+  color: $dark-text-color;
+  text-shadow: $light-text-shadow;
+}//@mixin
 
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.4em; }
-h4 { font-size: 1.2em; }
-h5 { font-size: 1.0em; }
-h6 { font-size: 0.8em; }
-h1,h2,h3,h4,h5, h6 { font-family: $header-font-family; }
+@mixin typestyle( $style ) {
+
+  @if $style == h1 {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: $demi;
+    color: $h136-color;
+  }//@if
+
+  @if $style == h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: $demi;
+    color: $h245-color;
+  }//@if
+
+  @if $style == h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $demi;
+    color: $h136-color;
+  }//@if
+
+  @if $style == h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $bold;
+    color: $h245-color;
+  }//@if
+
+  @if $style == h5 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: $bold;
+    color: $h245-color;
+  }//@if
+
+  @if $style == h6 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: $extra-bold;
+    color: $h136-color;
+  }//@if
+
+  @if $style == bodycopy {
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: $normal;
+    color: $bodycopy-color;
+  }//@if
+
+}//@mixin
+
 
