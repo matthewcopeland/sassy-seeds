@@ -31,6 +31,7 @@ $blockquote-padding: 20px 10px;
 
 @mixin code-style {
   text-align: left;
+  @include text-input;
 }//@mixin
 
 
