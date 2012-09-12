@@ -298,6 +298,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   background: #e0e0e0;
 }
 
+::selection {
+  color: #efefef;
+  background: #333333;
+  text-shadow: none;
+}
+
 #main-header, #main, #main-footer {
   padding: 20px;
 }

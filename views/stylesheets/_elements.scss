@@ -35,6 +35,12 @@ $blockquote-padding: 20px 10px;
 }//@mixin
 
 
+@mixin selection-pseudo-style {
+  color: $selection-text-color;
+  background: $selection-bg-color;
+  text-shadow: none;
+}//@mixin
+
 //--------------------------------------------
 // apply the visual styles to your elements.
 //
@@ -64,3 +70,4 @@ input {
     @include text-input;
     } // type=[]
 } // input
+::selection { @include selection-pseudo-style; }
