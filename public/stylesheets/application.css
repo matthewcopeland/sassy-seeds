@@ -97,12 +97,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 body {
-  background: #efefef url("/images/noise.png");
+  background: #333333 url("/images/noise.png");
   font-size: 12px;
   line-height: 28px;
   font-weight: 400;
-  color: #333333;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
+  color: #cdcdcd;
+  text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   font-family: "Exo", Arial, Sans-Serif;
 }
 
@@ -110,42 +110,42 @@ h1 {
   font-size: 24px;
   line-height: 48px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e5e5e5;
 }
 
 h2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 600;
-  color: #4f4f4f;
+  color: #b3b3b3;
 }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e5e5e5;
 }
 
 h4 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  color: #4f4f4f;
+  color: #b3b3b3;
 }
 
 h5 {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: #4f4f4f;
+  color: #b3b3b3;
 }
 
 h6 {
   font-size: 12px;
   line-height: 18px;
   font-weight: 800;
-  color: #1a1a1a;
+  color: #e5e5e5;
 }
 
 hr {
@@ -187,15 +187,15 @@ code {
   padding: 5px 10px;
   text-align: left;
   vertical-align: middle;
-  border: 1px solid #d5d5d5;
-  border-bottom-color: #efefef;
+  border: 1px solid #1a1a1a;
+  border-bottom-color: #333333;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  background: #e7e7e7;
+  background: #2b2b2b;
   -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
@@ -206,15 +206,15 @@ code {
   transition: background 0.3s;
 }
 code:focus {
-  background: #e0e0e0;
+  background: #242424;
 }
 
 button, input[type=submit], input[type=button] {
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
-  color: #333333;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
+  color: #cdcdcd;
+  text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -225,23 +225,23 @@ button, input[type=submit], input[type=button] {
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #333333, #1f1f1f);
+  background: -moz-linear-gradient(top, #333333, #1f1f1f);
+  background: -o-linear-gradient(top, #333333, #1f1f1f);
+  background: -ms-linear-gradient(top, #333333, #1f1f1f);
+  background: linear-gradient(top, #333333, #1f1f1f);
 }
 button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -moz-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -o-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
 button:active, input[type=submit]:active, input[type=button]:active {
-  background: #e2e2e2;
+  background: #262626;
 }
 
 textarea {
@@ -249,15 +249,15 @@ textarea {
   padding: 5px 10px;
   text-align: left;
   vertical-align: middle;
-  border: 1px solid #d5d5d5;
-  border-bottom-color: #efefef;
+  border: 1px solid #1a1a1a;
+  border-bottom-color: #333333;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  background: #e7e7e7;
+  background: #2b2b2b;
   -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
@@ -268,7 +268,7 @@ textarea {
   transition: background 0.3s;
 }
 textarea:focus {
-  background: #e0e0e0;
+  background: #242424;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=number], input[type=search] {
@@ -276,15 +276,15 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
   padding: 5px 10px;
   text-align: left;
   vertical-align: middle;
-  border: 1px solid #d5d5d5;
-  border-bottom-color: #efefef;
+  border: 1px solid #1a1a1a;
+  border-bottom-color: #333333;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  background: #e7e7e7;
+  background: #2b2b2b;
   -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.4);
@@ -295,12 +295,12 @@ input[type=text], input[type=password], input[type=email], input[type=number], i
   transition: background 0.3s;
 }
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=search]:focus {
-  background: #e0e0e0;
+  background: #242424;
 }
 
 ::selection {
-  color: #efefef;
-  background: #333333;
+  color: #333333;
+  background: #cdcdcd;
   text-shadow: none;
 }
 
@@ -309,12 +309,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 
 #main-header {
-  background: url("/images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e7e7), color-stop(100%, #e2e2e2));
-  background: url("/images/noise.png"), -webkit-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -moz-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -o-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -ms-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), linear-gradient(top, #e7e7e7, #e2e2e2);
+  background: url("/images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2b2b2b), color-stop(100%, #262626));
+  background: url("/images/noise.png"), -webkit-linear-gradient(top, #2b2b2b, #262626);
+  background: url("/images/noise.png"), -moz-linear-gradient(top, #2b2b2b, #262626);
+  background: url("/images/noise.png"), -o-linear-gradient(top, #2b2b2b, #262626);
+  background: url("/images/noise.png"), -ms-linear-gradient(top, #2b2b2b, #262626);
+  background: url("/images/noise.png"), linear-gradient(top, #2b2b2b, #262626);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #main-header h1, #main-header nav {
@@ -423,8 +423,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
-  color: #333333;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
+  color: #cdcdcd;
+  text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -435,31 +435,31 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #333333, #1f1f1f);
+  background: -moz-linear-gradient(top, #333333, #1f1f1f);
+  background: -o-linear-gradient(top, #333333, #1f1f1f);
+  background: -ms-linear-gradient(top, #333333, #1f1f1f);
+  background: linear-gradient(top, #333333, #1f1f1f);
   margin: 10px;
 }
 #styleguide .single-button a:hover, #styleguide .single-button a:focus, #styleguide .single-button button:hover, #styleguide .single-button button:focus, #styleguide .single-button input[type=submit]:hover, #styleguide .single-button input[type=submit]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -moz-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -o-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
 #styleguide .single-button a:active, #styleguide .single-button button:active, #styleguide .single-button input[type=submit]:active {
-  background: #e2e2e2;
+  background: #262626;
 }
 #styleguide .multi-button a, #styleguide .multi-button button, #styleguide .multi-button input[type=submit] {
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
-  color: #333333;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
+  color: #cdcdcd;
+  text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -470,12 +470,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #333333, #1f1f1f);
+  background: -moz-linear-gradient(top, #333333, #1f1f1f);
+  background: -o-linear-gradient(top, #333333, #1f1f1f);
+  background: -ms-linear-gradient(top, #333333, #1f1f1f);
+  background: linear-gradient(top, #333333, #1f1f1f);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -o-border-radius: 0;
@@ -485,15 +485,15 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   margin: 10px 0;
 }
 #styleguide .multi-button a:hover, #styleguide .multi-button a:focus, #styleguide .multi-button button:hover, #styleguide .multi-button button:focus, #styleguide .multi-button input[type=submit]:hover, #styleguide .multi-button input[type=submit]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
+  background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -moz-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -o-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
+  background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
 #styleguide .multi-button a:active, #styleguide .multi-button button:active, #styleguide .multi-button input[type=submit]:active {
-  background: #e2e2e2;
+  background: #262626;
 }
 #styleguide .multi-button a:first-of-type, #styleguide .multi-button button:first-of-type, #styleguide .multi-button input[type=submit]:first-of-type {
   -moz-border-radius: 4px 0 0 4px;

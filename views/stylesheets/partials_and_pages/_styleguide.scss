@@ -7,7 +7,6 @@
     > h1:first-of-type { margin-bottom: 10px; }
   } // > div
 
-
   .color-palette  figure {
     margin: 4px;
     @include palette-swatch( 100px );
