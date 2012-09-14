@@ -16,8 +16,8 @@ http_javascripts_path = '/javascripts'
 # File system locations
 css_dir               = File.join 'public', 'stylesheets'
 sass_dir              = File.join 'assets', 'stylesheets'
-images_dir            = File.join 'assets', 'images'
-javascripts_dir       = File.join 'assets', 'javascripts'
+images_dir            = File.join 'public', 'images'
+javascripts_dir       = File.join 'public', 'javascripts'
 
 # Syntax preference
 preferred_syntax      = :scss
