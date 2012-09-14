@@ -30,7 +30,6 @@
 @mixin em-style { font-style: $em-font-style; }
 @mixin strong-style { font-weight: $bold; }
 
-
 $blockquote-padding: 20px 10px;
 @mixin blockquote-style {
   padding: $blockquote-padding;
@@ -41,7 +40,6 @@ $blockquote-padding: 20px 10px;
   text-align: left;
   @include text-input;
 }//@mixin
-
 
 @mixin selection-pseudo-style {
   color: $selection-text-color;
