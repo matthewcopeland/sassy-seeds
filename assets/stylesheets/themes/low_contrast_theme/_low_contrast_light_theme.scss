@@ -1,0 +1,15 @@
+// low-contrast theme switcher.
+//
+// uncomment one of the theme sets below.
+// the major variables are all driven from the colors listed.
+
+//-----------------------------------------
+// light low-contrast theme
+$h136-color: $h136-dark-text-color;
+$h245-color: $h245-dark-text-color;
+$bodycopy-color: $bodycopy-dark-text-color;
+$body-text-shadow: $light-text-shadow;
+$body-bg-color: $off-white;
+//-----------------------------------------
+
+@import "low_contrast_universal_theme";

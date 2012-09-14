@@ -3,38 +3,9 @@
 // uncomment one of the theme sets below.
 // the major variables are all driven from the colors listed.
 
-//-----------------------------------------
-// dark low-contrast theme
-$h136-color: $h136-light-text-color;
-$h245-color: $h245-light-text-color;
-$bodycopy-color: $bodycopy-light-text-color;
-$body-text-shadow: $dark-text-shadow;
-$body-bg-color: rgb(51,51,51);
-//-----------------------------------------
-
 
 //-----------------------------------------
-// light low-contrast theme
-// $h136-color: $h136-dark-text-color;
-// $h245-color: $h245-dark-text-color;
-// $bodycopy-color: $bodycopy-dark-text-color;
-// $body-text-shadow: $light-text-shadow;
-// $body-bg-color: $off-white;
-//-----------------------------------------
-
-
-//-----------------------------------------
-//blue low-contrast theme
-// $h136-color: $h136-dark-text-color;
-// $h245-color: $h245-dark-text-color;
-// $bodycopy-color: $bodycopy-dark-text-color;
-// $body-text-shadow: $dark-text-shadow;
-// $body-bg-color: #add8e6;
-//-----------------------------------------
-
-
-//-----------------------------------------
-// universal theme properties
+// universal low-contrast theme properties
 // body
 $body-bg-texture: $noise;
 $body-bg: $body-bg-color $body-bg-texture;

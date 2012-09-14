@@ -13,8 +13,9 @@
 @import "base";
 
 //-------------------------------
-// use the base-variables in a selected theme.
-@import "themes/themes";
+// themes use the base variables
+// light low-contrast theme
+@import "themes/low_contrast_theme/low_contrast_light_theme";
 
 //-------------------------------
 // define visual styles
