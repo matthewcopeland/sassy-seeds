@@ -26,7 +26,7 @@ preferred_syntax      = :scss
 relative_assets       = false
 
 # Determines whether line comments should be added to compiled css for easier debugging
-line_comments         = false
+line_comments         = true
 
 # CSS output style - :nested, :expanded, :compact, or :compressed
 output_style          = :expanded
