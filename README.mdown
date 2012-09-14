@@ -2,7 +2,7 @@
 
 ## A sass/haml resource for clean white-label applications.
 
-This project uses a standard module for sass to separate visual and positional styling and avoid adding classes to the semantic markup. The standard module allows you to copy the generic visual-stylesheets and use them with any sass/compass compatible application.
+Sassy-seeds uses a standard module for sass to separate visual and positional styling and avoid adding classes to the semantic markup. The standard module allows you to copy the generic visual-stylesheets and use them with any sass/compass compatible application.
 
 Built with:
 
@@ -22,7 +22,7 @@ Built with:
 
 [A standard module definition for Sass](http://thesassway.com/intermediate/a-standard-module-definition-for-sass)
 
-[Octopress](https://github.com/imathis/octopress) - 
+[Octopress](https://github.com/imathis/octopress) -
 A prime example of how to use of variables to create an intuitive visual-theme in a single _theme.scss file. [Octopress Classic Theme File - https://github.com/imathis/octopress/blob/master/.themes/classic/sass/base/_theme.scss](https://github.com/imathis/octopress/blob/master/.themes/classic/sass/base/_theme.scss).
 
 [Zurb Foundation for sass and compass](https://github.com/zurb/foundation-sass) - As far as flexible frameworks go, Zurb has it down.
