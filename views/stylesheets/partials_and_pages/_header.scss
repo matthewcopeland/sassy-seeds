@@ -1,9 +1,3 @@
-@mixin header-style {
-  @include background( $header-bg );
-  border-bottom: $bevel-dark-border;
-}//@mixin
-
-
 #main-header {
   @include header-style;
 

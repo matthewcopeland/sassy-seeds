@@ -1,9 +1,9 @@
-// all positional, partial and page styles 
+// all positional, partial and page styles
 // will be specific to your app.
 //
 // partial and page stylesheets may contain some visual styles
 // but only in the form of variables and mixins.
-// 
+//
 
 // global layout
 @import "partials_and_pages/layout";
@@ -11,7 +11,6 @@
 // partials
 @import "partials_and_pages/header";
 @import "partials_and_pages/footer";
-@import "partials_and_pages/palette_swatch";
 
 // pages
 @import "partials_and_pages/styleguide";
