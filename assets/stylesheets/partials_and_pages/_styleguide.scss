@@ -51,6 +51,12 @@
 
   #forms {
     > div { margin: 10px 0; }
+    .checkboxes, .radios {
+      width: 150px;
+      margin: 0 auto;
+      text-align: left;
+      label { margin-left: .5em; }
+    }//.checkboxes,.radios
   } // #forms
 
 } // #styleguide
