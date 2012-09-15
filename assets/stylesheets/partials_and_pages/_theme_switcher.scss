@@ -1,0 +1,8 @@
+#theme-switcher {
+  display: inline-block;
+  float: right;
+  li {
+    display: inline-block;
+    @include button( $type: multibutton );
+  }//li
+}//#theme-switcher
