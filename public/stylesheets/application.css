@@ -108,11 +108,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 /* line 20, ../../assets/stylesheets/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 21, ../../assets/stylesheets/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 22, ../../assets/stylesheets/base/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 23, ../../assets/stylesheets/base/_reset.scss */
 .clear, .clearfloat {
   clear: both;
 }
 
-/* line 22, ../../assets/stylesheets/base/_reset.scss */
+/* line 29, ../../assets/stylesheets/base/_reset.scss */
+input[type=checkbox],
+input[type=radio],
+input[type=search],
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+/* line 35, ../../assets/stylesheets/base/_reset.scss */
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
@@ -208,7 +234,7 @@ a:hover {
 blockquote {
   padding: 20px 10px;
 }
-/* line 36, ../../assets/stylesheets/_elements.scss */
+/* line 37, ../../assets/stylesheets/_elements.scss */
 blockquote:before, blockquote:after {
   content: " \"\ ";
 }
@@ -225,7 +251,6 @@ strong {
 
 /* line 18, ../../assets/stylesheets/_sassy_seeds.scss */
 code {
-  text-align: left;
   display: inline-block;
   padding: 5px 10px;
   text-align: left;
@@ -359,6 +384,102 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   color: #333333;
   background: #cdcdcd;
   text-shadow: none;
+}
+
+/* line 35, ../../assets/stylesheets/_sassy_seeds.scss */
+.checkbox-wrapper, .radio-wrapper {
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 0;
+  cursor: pointer;
+}
+/* line 19, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper + label, .radio-wrapper + label {
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+/* line 24, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+/* line 29, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input + span, .radio-wrapper input + span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #1a1a1a;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background: #2b2b2b;
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+  -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(255, 255, 255, 0.2);
+  -moz-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  padding: 0;
+}
+/* line 15, ../../assets/stylesheets/elements/_forms.scss */
+.checkbox-wrapper input + span:focus, .radio-wrapper input + span:focus {
+  background: #242424;
+}
+/* line 35, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input + span:before, .radio-wrapper input + span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+/* line 45, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input[type=checkbox]:checked + span:before, .radio-wrapper input[type=checkbox]:checked + span:before {
+  content: "\2713";
+}
+/* line 52, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input[type=radio] + span, .radio-wrapper input[type=radio] + span {
+  -moz-border-radius: 0.75em;
+  -webkit-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  -ms-border-radius: 0.75em;
+  -khtml-border-radius: 0.75em;
+  border-radius: 0.75em;
+}
+/* line 53, ../../assets/stylesheets/elements/_checkbox_radio.scss */
+.checkbox-wrapper input[type=radio]:checked + span:before, .radio-wrapper input[type=radio]:checked + span:before {
+  content: "\25C9";
 }
 
 /* line 2, ../../assets/stylesheets/partials_and_pages/_layout.scss */
@@ -757,6 +878,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 /* line 53, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide #forms > div {
   margin: 10px 0;
+}
+/* line 54, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
+#styleguide #forms .checkboxes, #styleguide #forms .radios {
+  width: 150px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 58, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
+#styleguide #forms .checkboxes label, #styleguide #forms .radios label {
+  margin-left: .5em;
 }
 
 @media only screen and (max-width: 1024px ) {
