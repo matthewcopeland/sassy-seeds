@@ -28,3 +28,4 @@ input {
     } // type=[]
 } // input
 ::selection { @include selection-pseudo-style; }
+::-moz-selection { @include selection-pseudo-style; }
