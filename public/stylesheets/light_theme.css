@@ -387,6 +387,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   text-align: center;
   background: #efefef url("/images/noise.png");
   padding: 10px 20px 10px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px 0 0 4px;
   -o-border-radius: 4px 0 0 4px;
@@ -398,7 +399,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -o-box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
   box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
 }
-/* line 16, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+/* line 17, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
 #theme-switcher li {
   display: inline-block;
   display: inline-block;
@@ -769,15 +770,21 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
     border-right: none;
   }
 
-  /* line 23, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+  /* line 24, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
   #theme-switcher {
     top: auto;
     left: 0;
     bottom: 0;
     padding: 0;
     padding-top: 5px;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -khtml-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
   }
-  /* line 30, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+  /* line 31, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
   #theme-switcher li {
     padding-right: 0;
     padding-left: 0;

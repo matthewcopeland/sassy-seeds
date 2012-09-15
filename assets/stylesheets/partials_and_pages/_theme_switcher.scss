@@ -10,6 +10,7 @@ $mobile-theme-switcher-extra-body-height: 90px;
   text-align: center;
   background: $theme-switcher-bg;
   padding: 10px $page-padding 10px 10px;
+  border-top: $bevel-light-border;
   @include border-radius( $border-radius 0 0 $border-radius );
   @include box-shadow( -1px 1px 10px 0 rgba(0,0,0, .4) );
 
@@ -26,7 +27,7 @@ $mobile-theme-switcher-extra-body-height: 90px;
     bottom: 0;
     padding: 0;
     padding-top: 5px;
-
+    @include border-radius( $border-radius $border-radius 0 0 );
     li {
       @include padding-kill( horizontal );
       width: $mobile-theme-switcher-width;
