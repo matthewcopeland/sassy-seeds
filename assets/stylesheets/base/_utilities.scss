@@ -66,6 +66,17 @@
   }//@if
 }//@mixin
 
+@mixin bevel-kill( $direction ) {
+  @if $direction == vertical {
+    &, &:not(:first-of-type) { border-top: none; }
+    &, &:not(:last-of-type) { border-bottom: none; }
+  }//@if
+
+  @if $direction == horizontal {
+    &, &:not(:first-of-type) { border-left: none; }
+    &, &:not(:last-of-type) { border-right: none; }
+  }//@if
+}//@mixin
 
 
 //--------------------------------
