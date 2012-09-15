@@ -249,6 +249,7 @@ button, input[type=submit], input[type=button] {
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
+  text-align: center;
   color: #cdcdcd;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
@@ -268,7 +269,7 @@ button, input[type=submit], input[type=button] {
   background: -ms-linear-gradient(top, #333333, #1f1f1f);
   background: linear-gradient(top, #333333, #1f1f1f);
 }
-/* line 18, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
 button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
   background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
@@ -277,7 +278,7 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
   background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
   background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
-/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 20, ../../assets/stylesheets/elements/_buttons.scss */
 button:active, input[type=submit]:active, input[type=button]:active {
   background: #262626;
 }
@@ -381,17 +382,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 1, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
-#theme-switcher {
-  display: inline-block;
-  float: right;
-}
 /* line 4, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
 #theme-switcher li {
   display: inline-block;
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
+  text-align: center;
   color: #cdcdcd;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
@@ -417,7 +414,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -khtml-border-radius: 0;
   border-radius: 0;
 }
-/* line 18, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:hover, #theme-switcher li:focus {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
   background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
@@ -426,11 +423,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
   background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
-/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 20, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:active {
   background: #262626;
 }
-/* line 23, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 24, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:first-of-type {
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px 0 0 4px;
@@ -439,7 +436,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -khtml-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
 }
-/* line 24, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 25, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:last-of-type {
   -moz-border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0 4px 4px 0;
@@ -565,6 +562,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
+  text-align: center;
   color: #cdcdcd;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
@@ -585,7 +583,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   background: linear-gradient(top, #333333, #1f1f1f);
   margin: 10px;
 }
-/* line 18, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .single-button a:hover, #styleguide .single-button a:focus, #styleguide .single-button button:hover, #styleguide .single-button button:focus, #styleguide .single-button input[type=submit]:hover, #styleguide .single-button input[type=submit]:focus {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
   background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
@@ -594,7 +592,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
   background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
-/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 20, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .single-button a:active, #styleguide .single-button button:active, #styleguide .single-button input[type=submit]:active {
   background: #262626;
 }
@@ -603,6 +601,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   display: inline-block;
   cursor: pointer;
   padding: 8px 14px;
+  text-align: center;
   color: #cdcdcd;
   text-shadow: 0 -1px rgba(22, 41, 52, 0.3);
   -moz-border-radius: 4px;
@@ -629,7 +628,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   border-radius: 0;
   margin: 10px 0;
 }
-/* line 18, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:hover, #styleguide .multi-button a:focus, #styleguide .multi-button button:hover, #styleguide .multi-button button:focus, #styleguide .multi-button input[type=submit]:hover, #styleguide .multi-button input[type=submit]:focus {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #1f1f1f));
   background: -webkit-linear-gradient(top, #4d4d4d, #1f1f1f);
@@ -638,11 +637,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   background: -ms-linear-gradient(top, #4d4d4d, #1f1f1f);
   background: linear-gradient(top, #4d4d4d, #1f1f1f);
 }
-/* line 19, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 20, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:active, #styleguide .multi-button button:active, #styleguide .multi-button input[type=submit]:active {
   background: #262626;
 }
-/* line 23, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 24, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:first-of-type, #styleguide .multi-button button:first-of-type, #styleguide .multi-button input[type=submit]:first-of-type {
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px 0 0 4px;
@@ -651,7 +650,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -khtml-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
 }
-/* line 24, ../../assets/stylesheets/elements/_buttons.scss */
+/* line 25, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:last-of-type, #styleguide .multi-button button:last-of-type, #styleguide .multi-button input[type=submit]:last-of-type {
   -moz-border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0 4px 4px 0;
@@ -721,4 +720,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 /* line 53, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide #forms > div {
   margin: 10px 0;
+}
+
+@media only screen and (max-width: 1024px ) {
+  -webkit-text-size-adjust: none;
+}
+@media only screen and (max-width: 599px ) {
+  /* line 11, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+  #theme-switcher li {
+    padding-right: 0;
+    padding-left: 0;
+    width: 50%;
+  }
 }
