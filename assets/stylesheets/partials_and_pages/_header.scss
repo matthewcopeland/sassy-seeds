@@ -11,3 +11,17 @@
   }//nav a
 
 }//#main-header
+
+@mixin header-rwd {
+  #main-header {
+    padding-top: 0;
+    h1 { text-align: center; }
+    h1, nav { display: block; }
+    nav {
+      a {
+        @include padding-kill( horizontal );
+        width: 50%;
+      }//a
+    }//nav
+  }//#main-header
+}//@mixin

@@ -726,6 +726,25 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-text-size-adjust: none;
 }
 @media only screen and (max-width: 599px ) {
+  /* line 16, ../../assets/stylesheets/partials_and_pages/_header.scss */
+  #main-header {
+    padding-top: 0;
+  }
+  /* line 18, ../../assets/stylesheets/partials_and_pages/_header.scss */
+  #main-header h1 {
+    text-align: center;
+  }
+  /* line 19, ../../assets/stylesheets/partials_and_pages/_header.scss */
+  #main-header h1, #main-header nav {
+    display: block;
+  }
+  /* line 21, ../../assets/stylesheets/partials_and_pages/_header.scss */
+  #main-header nav a {
+    padding-right: 0;
+    padding-left: 0;
+    width: 50%;
+  }
+
   /* line 11, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
   #theme-switcher li {
     padding-right: 0;

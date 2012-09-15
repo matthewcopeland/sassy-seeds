@@ -5,6 +5,7 @@
 @media only screen and (max-width: 768px ) {}
 
 @media only screen and (max-width: 599px ) {
+  @include header-rwd;
   @include theme-switcher-rwd;
 }//@media
 
