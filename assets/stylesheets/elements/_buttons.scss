@@ -15,6 +15,7 @@ $button-default-text-shadow: $body-text-shadow;
   text-align: center;
   color: $button-default-text-color;
   text-shadow: $button-default-text-shadow;
+  @include user-select( none );
   @include border-radius( $button-border-radius );
   @include box-shadow( $button-shadow );
   @include button-bg-static( $button-bg-color: $color );
