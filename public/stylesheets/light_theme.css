@@ -175,8 +175,8 @@ h6 {
 
 /* line 13, ../../assets/stylesheets/_sassy_seeds.scss */
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 /* line 14, ../../assets/stylesheets/_sassy_seeds.scss */
@@ -261,25 +261,25 @@ button, input[type=submit], input[type=button] {
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #efefef, #d0d0d0);
+  background: -moz-linear-gradient(top, #efefef, #d0d0d0);
+  background: -o-linear-gradient(top, #efefef, #d0d0d0);
+  background: -ms-linear-gradient(top, #efefef, #d0d0d0);
+  background: linear-gradient(top, #efefef, #d0d0d0);
 }
 /* line 21, ../../assets/stylesheets/elements/_buttons.scss */
 button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -moz-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -o-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -ms-linear-gradient(top, #ffffff, #d0d0d0);
+  background: linear-gradient(top, #ffffff, #d0d0d0);
 }
 /* line 22, ../../assets/stylesheets/elements/_buttons.scss */
 button:active, input[type=submit]:active, input[type=button]:active {
-  background: #e2e2e2;
+  background: #898989;
 }
 
 /* line 20, ../../assets/stylesheets/_sassy_seeds.scss */
@@ -352,13 +352,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 /* line 1, ../../assets/stylesheets/partials_and_pages/_header.scss */
 #main-header {
-  background: url("/images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e7e7), color-stop(100%, #e2e2e2));
-  background: url("/images/noise.png"), -webkit-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -moz-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -o-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), -ms-linear-gradient(top, #e7e7e7, #e2e2e2);
-  background: url("/images/noise.png"), linear-gradient(top, #e7e7e7, #e2e2e2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: url("/images/noise.png"), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e5e5), color-stop(100%, #dbdbdb));
+  background: url("/images/noise.png"), -webkit-linear-gradient(top, #e5e5e5, #dbdbdb);
+  background: url("/images/noise.png"), -moz-linear-gradient(top, #e5e5e5, #dbdbdb);
+  background: url("/images/noise.png"), -o-linear-gradient(top, #e5e5e5, #dbdbdb);
+  background: url("/images/noise.png"), -ms-linear-gradient(top, #e5e5e5, #dbdbdb);
+  background: url("/images/noise.png"), linear-gradient(top, #e5e5e5, #dbdbdb);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 /* line 4, ../../assets/stylesheets/partials_and_pages/_header.scss */
 #main-header h1, #main-header nav {
@@ -372,11 +372,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 64, ../../assets/stylesheets/base/_utilities.scss */
 #main-header nav a:not(:first-of-type) {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
 }
 /* line 65, ../../assets/stylesheets/base/_utilities.scss */
 #main-header nav a:not(:last-of-type) {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* line 8, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
@@ -387,7 +387,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   text-align: center;
   background: #efefef url("/images/noise.png");
   padding: 10px 20px 10px 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
   -moz-border-radius: 4px 0 0 4px;
   -webkit-border-radius: 4px 0 0 4px;
   -o-border-radius: 4px 0 0 4px;
@@ -418,12 +418,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #efefef, #d0d0d0);
+  background: -moz-linear-gradient(top, #efefef, #d0d0d0);
+  background: -o-linear-gradient(top, #efefef, #d0d0d0);
+  background: -ms-linear-gradient(top, #efefef, #d0d0d0);
+  background: linear-gradient(top, #efefef, #d0d0d0);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -o-border-radius: 0;
@@ -433,16 +433,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 21, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:hover, #theme-switcher li:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -moz-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -o-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -ms-linear-gradient(top, #ffffff, #d0d0d0);
+  background: linear-gradient(top, #ffffff, #d0d0d0);
 }
 /* line 22, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:active {
-  background: #e2e2e2;
+  background: #898989;
 }
 /* line 26, ../../assets/stylesheets/elements/_buttons.scss */
 #theme-switcher li:first-of-type {
@@ -464,7 +464,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 22, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
 #theme-switcher li.selected {
-  background: #e2e2e2;
+  background: #898989;
 }
 
 /* line 2, ../../assets/stylesheets/partials_and_pages/_footer.scss */
@@ -487,11 +487,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 59, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide > article:not(:first-of-type) {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 /* line 60, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide > article:not(:last-of-type) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 /* line 7, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide > article > h1:first-of-type {
@@ -596,26 +596,26 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #efefef, #d0d0d0);
+  background: -moz-linear-gradient(top, #efefef, #d0d0d0);
+  background: -o-linear-gradient(top, #efefef, #d0d0d0);
+  background: -ms-linear-gradient(top, #efefef, #d0d0d0);
+  background: linear-gradient(top, #efefef, #d0d0d0);
   margin: 10px;
 }
 /* line 21, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .single-button a:hover, #styleguide .single-button a:focus, #styleguide .single-button button:hover, #styleguide .single-button button:focus, #styleguide .single-button input[type=submit]:hover, #styleguide .single-button input[type=submit]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -moz-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -o-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -ms-linear-gradient(top, #ffffff, #d0d0d0);
+  background: linear-gradient(top, #ffffff, #d0d0d0);
 }
 /* line 22, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .single-button a:active, #styleguide .single-button button:active, #styleguide .single-button input[type=submit]:active {
-  background: #e2e2e2;
+  background: #898989;
 }
 /* line 25, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide .multi-button a, #styleguide .multi-button button, #styleguide .multi-button input[type=submit] {
@@ -635,12 +635,12 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   -o-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.7);
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #efefef, #dbdbdb);
-  background: -moz-linear-gradient(top, #efefef, #dbdbdb);
-  background: -o-linear-gradient(top, #efefef, #dbdbdb);
-  background: -ms-linear-gradient(top, #efefef, #dbdbdb);
-  background: linear-gradient(top, #efefef, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #efefef, #d0d0d0);
+  background: -moz-linear-gradient(top, #efefef, #d0d0d0);
+  background: -o-linear-gradient(top, #efefef, #d0d0d0);
+  background: -ms-linear-gradient(top, #efefef, #d0d0d0);
+  background: linear-gradient(top, #efefef, #d0d0d0);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -o-border-radius: 0;
@@ -651,16 +651,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 21, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:hover, #styleguide .multi-button a:focus, #styleguide .multi-button button:hover, #styleguide .multi-button button:focus, #styleguide .multi-button input[type=submit]:hover, #styleguide .multi-button input[type=submit]:focus {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
-  background: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -o-linear-gradient(top, #ffffff, #dbdbdb);
-  background: -ms-linear-gradient(top, #ffffff, #dbdbdb);
-  background: linear-gradient(top, #ffffff, #dbdbdb);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d0d0d0));
+  background: -webkit-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -moz-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -o-linear-gradient(top, #ffffff, #d0d0d0);
+  background: -ms-linear-gradient(top, #ffffff, #d0d0d0);
+  background: linear-gradient(top, #ffffff, #d0d0d0);
 }
 /* line 22, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:active, #styleguide .multi-button button:active, #styleguide .multi-button input[type=submit]:active {
-  background: #e2e2e2;
+  background: #898989;
 }
 /* line 26, ../../assets/stylesheets/elements/_buttons.scss */
 #styleguide .multi-button a:first-of-type, #styleguide .multi-button button:first-of-type, #styleguide .multi-button input[type=submit]:first-of-type {
@@ -719,11 +719,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 59, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide #lists ul:nth-of-type(6) li:not(:first-of-type) {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 /* line 60, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide #lists ul:nth-of-type(6) li:not(:last-of-type) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 /* line 44, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide #lists ul:nth-of-type(7) li {
@@ -732,11 +732,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 /* line 64, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide #lists ul:nth-of-type(7) li:not(:first-of-type) {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
 }
 /* line 65, ../../assets/stylesheets/base/_utilities.scss */
 #styleguide #lists ul:nth-of-type(7) li:not(:last-of-type) {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 /* line 53, ../../assets/stylesheets/partials_and_pages/_styleguide.scss */
 #styleguide #forms > div {

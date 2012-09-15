@@ -12,8 +12,8 @@ $body-bg: $body-bg-color $body-bg-texture;
 
 // header
 $header-bg-gradient-base: $body-bg-color;
-$header-bg-gradient-stop-1: darken($header-bg-gradient-base, 3);
-$header-bg-gradient-stop-2: darken($header-bg-gradient-base, 5);
+$header-bg-gradient-stop-1: darken($header-bg-gradient-base, 4);
+$header-bg-gradient-stop-2: darken($header-bg-gradient-base, 8);
 $header-bg-color: linear-gradient( top, $header-bg-gradient-stop-1, $header-bg-gradient-stop-2 );
 $header-bg-texture: $noise;
 $header-bg: $header-bg-texture, $header-bg-color;
@@ -41,8 +41,3 @@ $text-input-border: 1px solid $text-input-border-color;
 $selection-bg-color: $bodycopy-color;
 $selection-text-color: $body-bg-color;
 
-// bevel borders
-$bevel-color-light: rgba($white, 0.1);
-$bevel-color-dark: rgba(0,0,0, 0.3);
-$bevel-light-border: 1px solid $bevel-color-light;
-$bevel-dark-border: 1px solid $bevel-color-dark;

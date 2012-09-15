@@ -10,6 +10,12 @@ $h245-color: $h245-dark-text-color;
 $bodycopy-color: $bodycopy-dark-text-color;
 $body-text-shadow: $light-text-shadow;
 $body-bg-color: $off-white;
+
+// bevel borders
+$bevel-color-light: rgba( $white, .8);
+$bevel-color-dark: rgba(0,0,0, 0.2);
+$bevel-light-border: 1px solid $bevel-color-light;
+$bevel-dark-border: 1px solid $bevel-color-dark;
 //-----------------------------------------
 
 @import "low_contrast_universal_theme";
