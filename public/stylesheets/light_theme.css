@@ -382,7 +382,26 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 4, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+/* line 6, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+#theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  text-align: center;
+  background: #efefef url("/images/noise.png");
+  padding: 10px 20px 10px 10px;
+  -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -khtml-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  -moz-box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+  -o-box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+/* line 16, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
 #theme-switcher li {
   display: inline-block;
   display: inline-block;
@@ -753,10 +772,23 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
     border-right: none;
   }
 
-  /* line 11, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+  /* line 23, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
+  #theme-switcher {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    padding-top: 5px;
+  }
+  /* line 30, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */
   #theme-switcher li {
     padding-right: 0;
     padding-left: 0;
     width: 50%;
+  }
+
+  /* line 12, ../../assets/stylesheets/partials_and_pages/_footer.scss */
+  #main-footer {
+    padding-bottom: 90px;
   }
 }

@@ -1,6 +1,18 @@
 $theme-count: 2;
 $mobile-theme-switcher-width: 100%/$theme-count;
+$theme-switcher-bg: $body-bg;
+$mobile-theme-switcher-extra-body-height: 90px;
+
 #theme-switcher {
+  position: fixed;
+  top: $page-padding;
+  right: 0;
+  text-align: center;
+  background: $theme-switcher-bg;
+  padding: 10px $page-padding 10px 10px;
+  @include border-radius( $border-radius 0 0 $border-radius );
+  @include box-shadow( -1px 1px 10px 0 rgba(0,0,0, .4) );
+
   li {
     display: inline-block;
     @include button( $type: multibutton );
@@ -8,8 +20,16 @@ $mobile-theme-switcher-width: 100%/$theme-count;
 }//#theme-switcher
 
 @mixin theme-switcher-rwd {
-  #theme-switcher li {
-    @include padding-kill( horizontal );
-    width: $mobile-theme-switcher-width;
-  }
+  #theme-switcher {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    padding-top: 5px;
+
+    li {
+      @include padding-kill( horizontal );
+      width: $mobile-theme-switcher-width;
+    }//li
+  }//#theme-switcher
 }//@mixin

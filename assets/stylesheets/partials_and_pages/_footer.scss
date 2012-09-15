@@ -1,5 +1,5 @@
 #main-footer {
-  nav { 
+  nav {
     text-align: center;
     a {
       display: inline-block;
@@ -7,3 +7,7 @@
       } // a
   } // nav
 } // #main-footer
+
+@mixin footer-rwd {
+  #main-footer { padding-bottom: $mobile-theme-switcher-extra-body-height; }
+}//@mixin
