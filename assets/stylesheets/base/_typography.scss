@@ -1,6 +1,5 @@
-// exo
-// http://www.google.com/webfonts#UsePlace:use/Collection:Exo:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic
-// imported in application.scss per w3 rules: https://github.com/chriseppstein/compass/issues/639
+// typefaces are imported in application.scss per w3 rules: https://github.com/chriseppstein/compass/issues/639
+// exo - http://www.google.com/webfonts#UsePlace:use/Collection:Exo:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic
 
 //---------------------------------
 // font-families
@@ -98,4 +97,7 @@ $light-text-shadow: 0 -1px rgba($white, .3);
 
 }//@mixin
 
-
+//------------------------------
+// unicode characters
+$checkmark-unicode: \2713;
+$radio-circle-unicode: \25C9;
