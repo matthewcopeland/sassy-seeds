@@ -740,9 +740,17 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   }
   /* line 21, ../../assets/stylesheets/partials_and_pages/_header.scss */
   #main-header nav a {
+    width: 50%;
     padding-right: 0;
     padding-left: 0;
-    width: 50%;
+  }
+  /* line 76, ../../assets/stylesheets/base/_utilities.scss */
+  #main-header nav a, #main-header nav a:not(:first-of-type) {
+    border-left: none;
+  }
+  /* line 77, ../../assets/stylesheets/base/_utilities.scss */
+  #main-header nav a, #main-header nav a:not(:last-of-type) {
+    border-right: none;
   }
 
   /* line 11, ../../assets/stylesheets/partials_and_pages/_theme_switcher.scss */

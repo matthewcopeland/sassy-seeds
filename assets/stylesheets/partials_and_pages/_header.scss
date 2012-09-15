@@ -19,8 +19,9 @@
     h1, nav { display: block; }
     nav {
       a {
-        @include padding-kill( horizontal );
         width: 50%;
+        @include padding-kill( horizontal );
+        @include bevel-kill ( horizontal );
       }//a
     }//nav
   }//#main-header
