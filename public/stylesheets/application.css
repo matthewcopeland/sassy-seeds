@@ -84,7 +84,7 @@ input, textarea, keygen, select, button, isindex {
   color: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  line-height: inherit;
+  line-height: normal;
   text-transform: none;
   text-indent: 0;
   text-shadow: inherit;

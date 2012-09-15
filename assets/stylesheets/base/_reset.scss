@@ -12,7 +12,7 @@ q:before,q:after,blockquote:before,blockquote:after {content:'';content:none;quo
 a, a:hover, a:visited, a:active, a:link {text-decoration:none;}
 form {display: block;}
 textarea:focus, input:focus, select:focus {outline: none;}
-input, textarea, keygen, select, button, isindex { font: inherit; color: inherit; letter-spacing: inherit; word-spacing: inherit; line-height: inherit; text-transform: none; text-indent: 0; text-shadow: inherit; display: inline-block; text-align: inherit; border: none; }
+input, textarea, keygen, select, button, isindex { font: inherit; color: inherit; letter-spacing: inherit; word-spacing: inherit; line-height: normal; text-transform: none; text-indent: 0; text-shadow: inherit; display: inline-block; text-align: inherit; border: none; }
 // html5 block elements
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 .clear, .clearfloat {clear:both;}
