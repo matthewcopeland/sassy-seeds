@@ -3,6 +3,8 @@ $mobile-theme-switcher-width: 100%/$theme-count;
 $theme-switcher-bg: $body-bg;
 $mobile-theme-switcher-extra-body-height: 90px;
 
+
+
 #theme-switcher {
   position: fixed;
   top: $page-padding;
@@ -17,9 +19,12 @@ $mobile-theme-switcher-extra-body-height: 90px;
   li {
     display: inline-block;
     @include button( $type: multibutton );
+    &.selected { @include button-bg-active; }
   }//li
 }//#theme-switcher
 
+
+//---------------------------------
 @mixin theme-switcher-rwd {
   #theme-switcher {
     top: auto;
