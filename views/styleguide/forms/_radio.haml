@@ -1,6 +1,12 @@
-%input{:type=>"radio", :name=>"radiogroup", :checked=>"checked"}
-%label Checked Radio
+%fieldset
+  %span.radio-wrapper
+    %input{:type=>"radio", :name=>"radiogroup", :checked=>"checked"}
+    %span
+  %label Checked Radio
 
 - 2.times do
-  %input{:type=>"radio", :name=>"radiogroup"}
-  %label Radio
+  %fieldset
+    %span.radio-wrapper
+      %input{:type=>"radio", :name=>"radiogroup"}
+      %span
+    %label Radio
