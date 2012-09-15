@@ -34,7 +34,6 @@ $button-default-text-shadow: $body-text-shadow;
 $text-input-bg: darken($body-bg-color, 3);
 $text-input-bg-focus: darken($text-input-bg, 3);
 $text-input-border-color: darken($body-bg-color, 10);
-$text-input-border-bottom-color: lighten($text-input-border-color, 10);
 $text-input-border-color-hover: darken($text-input-border-color, 10);
 $text-input-border: 1px solid $text-input-border-color;
 
