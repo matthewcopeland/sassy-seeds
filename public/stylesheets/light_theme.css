@@ -795,4 +795,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   #main-footer {
     padding-bottom: 90px;
   }
+
+  /* line 76, ../../assets/stylesheets/base/_utilities.scss */
+  #styleguide #lists ul:nth-of-type(7) li, #styleguide #lists ul:nth-of-type(7) li:not(:first-of-type) {
+    border-left: none;
+  }
+  /* line 77, ../../assets/stylesheets/base/_utilities.scss */
+  #styleguide #lists ul:nth-of-type(7) li, #styleguide #lists ul:nth-of-type(7) li:not(:last-of-type) {
+    border-right: none;
+  }
 }

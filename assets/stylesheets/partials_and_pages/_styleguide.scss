@@ -54,3 +54,9 @@
   } // #forms
 
 } // #styleguide
+
+@mixin styleguide-rwd {
+  #styleguide {
+    #lists ul:nth-of-type(7) li { @include bevel-kill( horizontal ); }
+  }//#styleguide
+}//@mixin
