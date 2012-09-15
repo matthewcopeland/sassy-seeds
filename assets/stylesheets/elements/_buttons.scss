@@ -31,6 +31,7 @@ $button-default-text-shadow: $body-text-shadow;
 
 //--------------------------------
 // button-bgs
-@mixin button-bg-static( $button-bg-color: $button-default-bg-color ) { @include background( linear-gradient(top, $button-bg-color, darken($button-bg-color, 8) ) ); }
-@mixin button-bg-hover ( $button-bg-color: $button-default-bg-color ) { @include background( linear-gradient( top, lighten($button-bg-color, 10), darken($button-bg-color, 8) ) ); }
-@mixin button-bg-active( $button-bg-color: $button-default-bg-color ) { background: darken($button-bg-color, 5); }
+@function button-bg-stop-2( $button-bg-stop-2 ) { @return darken( $button-bg-stop-2, 12); }
+@mixin button-bg-static   ( $button-bg-color: $button-default-bg-color ) { @include background( linear-gradient(top, $button-bg-color, button-bg-stop-2($button-bg-color) ) ); }
+@mixin button-bg-hover    ( $button-bg-color: $button-default-bg-color ) { @include background( linear-gradient( top, lighten($button-bg-color, 10), button-bg-stop-2($button-bg-color) ) ); }
+@mixin button-bg-active   ( $button-bg-color: $button-default-bg-color ) { background: darken($button-bg-color, 40); }
