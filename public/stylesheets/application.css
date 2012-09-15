@@ -84,7 +84,6 @@ input, textarea, keygen, select, button, isindex {
   color: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  line-height: normal;
   text-transform: none;
   text-indent: 0;
   text-shadow: inherit;
@@ -93,17 +92,27 @@ input, textarea, keygen, select, button, isindex {
   border: none;
 }
 
+/* line 16, ../../assets/stylesheets/base/_reset.scss */
+textarea, input {
+  line-height: normal;
+}
+
 /* line 17, ../../assets/stylesheets/base/_reset.scss */
+keygen, select, button, isindex, input[type=submit], input[type=button] {
+  line-height: inherit;
+}
+
+/* line 19, ../../assets/stylesheets/base/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 18, ../../assets/stylesheets/base/_reset.scss */
+/* line 20, ../../assets/stylesheets/base/_reset.scss */
 .clear, .clearfloat {
   clear: both;
 }
 
-/* line 20, ../../assets/stylesheets/base/_reset.scss */
+/* line 22, ../../assets/stylesheets/base/_reset.scss */
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
@@ -340,6 +349,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 /* line 30, ../../assets/stylesheets/_sassy_seeds.scss */
 ::selection {
+  color: #333333;
+  background: #cdcdcd;
+  text-shadow: none;
+}
+
+/* line 31, ../../assets/stylesheets/_sassy_seeds.scss */
+::-moz-selection {
   color: #333333;
   background: #cdcdcd;
   text-shadow: none;
