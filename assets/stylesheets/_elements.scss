@@ -6,6 +6,7 @@
 @import "elements/links";
 @import "elements/lists";
 @import "elements/forms";
+@import "elements/checkbox_radio";
 
 // ui elements
 @import "elements/palette_swatch";
@@ -34,11 +35,6 @@ $blockquote-padding: 20px 10px;
 @mixin blockquote-style {
   padding: $blockquote-padding;
   &:before, &:after { content: " \"\ "; }
-}//@mixin
-
-@mixin code-style {
-  text-align: left;
-  @include text-input;
 }//@mixin
 
 @mixin selection-pseudo-style {
