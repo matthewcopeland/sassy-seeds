@@ -1,4 +1,4 @@
-# White Label Styleguide
+# Sassy-Seeds
 
 ## A sass/haml resource for clean white-label applications.
 
