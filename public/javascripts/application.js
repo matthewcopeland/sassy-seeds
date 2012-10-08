@@ -5,11 +5,15 @@ $(document).ready(function() {
   theme_switch.click(function() {
     var stylesheet_name = $(this).attr("rel");
     var oldStyleSheet = $('link[rel=stylesheet]');
+    $('body').fadeOut(500, function(){
+      oldStyleSheet.delay(1000).remove();
+    }).delay(500).fadeIn(500);
 
-    $("head").after("<link rel=\"stylesheet\" type=\"text\/css\" href=\"\/stylesheets\/" + stylesheet_name + ".css\" \/>" );
+    $("head").after("<link rel=\"stylesheet\" type=\"text\/css\" href=\"\/stylesheets\/" + stylesheet_name + ".css\" \/>");
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
-    oldStyleSheet.remove();
+
+
   });
 
   // active events in mobile webkit.
