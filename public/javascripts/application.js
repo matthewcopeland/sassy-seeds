@@ -6,10 +6,9 @@ $(document).ready(function() {
     var stylesheet_name = $(this).attr("rel");
     var oldStyleSheet = $('link[rel=stylesheet]');
 
-    $("head").append("<link rel=\"stylesheet\" type=\"text\/css\" href=\"\/stylesheets\/" + stylesheet_name + ".css\" \/>" );
+    $("head").after("<link rel=\"stylesheet\" type=\"text\/css\" href=\"\/stylesheets\/" + stylesheet_name + ".css\" \/>" );
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
-
     oldStyleSheet.remove();
   });
 
