@@ -1,6 +1,7 @@
 #main-header {
   @include header-style;
 
+  h1 {margin-right:10px;}
   h1, nav { display: inline-block; }
 
   nav a {
@@ -15,7 +16,7 @@
 @mixin header-rwd {
   #main-header {
     padding-top: 0;
-    h1 { text-align: center; }
+    h1 { text-align: center;}
     h1, nav { display: block; }
     nav {
       a {

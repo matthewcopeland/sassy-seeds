@@ -65,7 +65,7 @@ $light-text-shadow: 0 -1px rgba($white, .3);
    @if $style == h1 {
     font-size: 36px;
     line-height: 52px;
-    font-weight: $medium;
+    font-weight: $demi;
     color: $h136-color;
   }//@if
 
@@ -79,28 +79,28 @@ $light-text-shadow: 0 -1px rgba($white, .3);
   @if $style == h3 {
     font-size: 22px;
     line-height: 30px;
-    font-weight: $demi;
+    font-weight: $medium;
     color: $h136-color;
   }//@if
 
   @if $style == h4 {
     font-size: 22px;
     line-height: 30px;
-    font-weight: $bold;
+    font-weight: $demi;
     color: $h245-color;
   }//@if
 
   @if $style == h5 {
     font-size: 18px;
     line-height: 24px;
-    font-weight: $bold;
+    font-weight: $demi;
     color: $h245-color;
   }//@if
 
   @if $style == h6 {
     font-size: 16px;
     line-height: 24px;
-    font-weight: $extra-bold;
+    font-weight: $bold;
     color: $h136-color;
   }//@if
 
