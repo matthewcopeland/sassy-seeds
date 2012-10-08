@@ -59,6 +59,11 @@
     }//.checkboxes,.radios
   } // #forms
 
+  #tables table {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
 } // #styleguide
 
 @mixin styleguide-rwd {

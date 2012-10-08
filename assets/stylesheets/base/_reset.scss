@@ -4,7 +4,7 @@ html,body,div,span,article,aside,canvas,details,embed,figure,figcaption,footer,h
 table {border-collapse:collapse;border-spacing:0;}
 fieldset, img, abbr, acronyminput, input,textarea{border:0;border:none;outline:none;}
 address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
-ol,ul,li{list-style:none;list-style-type:none;}
+ol,ul,li{list-style:none;list-style-type:none;list-style-position: inside;}
 caption,th,input,textarea {text-align:left;}
 em, strong {font-style: normal; font-weight: normal;}
 h1,h2,h3,h4,h5,h6 {font-size:1.0em;font-weight:normal;}
@@ -15,6 +15,7 @@ textarea:focus, input:focus, select:focus {outline: none;}
 input, textarea, keygen, select, button, isindex { font: inherit; color: inherit; letter-spacing: inherit; word-spacing: inherit; text-transform: none; text-indent: 0; text-shadow: inherit; display: inline-block; text-align: inherit; border: none; }
 textarea, input { line-height: normal; }
 keygen, select, button, isindex, input[type=submit], input[type=button] { line-height: inherit; }
+pre, code {line-height:1;}
 // html5 block elements
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 audio:not([controls]) { display: none; }

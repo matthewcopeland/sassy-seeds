@@ -15,18 +15,24 @@ a { @include link; }
 blockquote { @include blockquote-style; }
 em { @include em-style; }
 strong { @include strong-style; }
-code { @include text-input-style; }
 button, input[type=submit], input[type=button] { @include button; }
-textarea { @include text-input-style; }
+code {
+  @include text-input-style;
+  @include code-style;
+}//code
 input {
   &[type=text],
   &[type=password],
   &[type=email],
   &[type=number],
-  &[type=search] {
-    @include text-input-style;
-    } // type=[]
-} // input
+  &[type=search] { @include text-input-style; }
+}//input
+textarea { @include text-input-style; }
+
+table { @include table-style; }
+th { @include typestyle( h3 ); }
+th, td { @include table-cell-style; }
+
 ::selection { @include selection-pseudo-style; }
 ::-moz-selection { @include selection-pseudo-style; }
 

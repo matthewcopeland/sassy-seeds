@@ -89,10 +89,16 @@ $light-text-shadow: 0 -1px rgba($white, .3);
   }//@if
 
   @if $style == bodycopy {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
     font-weight: $normal;
     color: $bodycopy-color;
+  }//@if
+
+  @if $style == codecopy {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: $normal;
   }//@if
 
 }//@mixin

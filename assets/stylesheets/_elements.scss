@@ -7,6 +7,7 @@
 @import "elements/lists";
 @import "elements/forms";
 @import "elements/checkbox_radio";
+@import "elements/tables";
 
 // ui elements
 @import "elements/palette_swatch";
@@ -43,3 +44,6 @@ $blockquote-padding: 20px 10px;
   text-shadow: none;
 }//@mixin
 
+@mixin code-style {
+  @include typestyle( codecopy );
+}//@mixin

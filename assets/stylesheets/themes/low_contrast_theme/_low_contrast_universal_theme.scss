@@ -44,3 +44,7 @@ $checked-bg: $input-bg;
 $selection-bg-color: $bodycopy-color;
 $selection-text-color: $body-bg-color;
 
+// table
+$table-bg-texture: $body-bg-texture;
+$table-bg-color: $body-bg-color;
+$table-bg: $table-bg-texture $table-bg-color;
