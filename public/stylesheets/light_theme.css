@@ -930,34 +930,35 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 /* line 1, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page {
+  max-width: 1020px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
 }
-/* line 5, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 6, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page h1 {
   margin-top: 20px;
 }
-/* line 6, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 7, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page h2 {
   margin-top: 10px;
 }
-/* line 7, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 8, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page h3, #exo-page h4 {
   margin-top: 20px;
 }
-/* line 8, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 9, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page h5, #exo-page h6 {
   margin-top: 20px;
 }
-/* line 10, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 11, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page .hero_text_bold {
   font-size: 48px;
   line-height: 60px;
   font-weight: 600;
   color: #1a1a1a;
 }
-/* line 14, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
+/* line 15, ../../assets/stylesheets/partials_and_pages/_exo_page.scss */
 #exo-page .hero_text_thin {
   font-size: 48px;
   line-height: 60px;
@@ -967,35 +968,36 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 /* line 1, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page {
+  max-width: 1020px;
   font-family: "Source Sans Pro", Arial, Sans-Serif;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
 }
-/* line 6, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 7, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page h1 {
   margin-top: 15px;
 }
-/* line 7, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 8, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page h2 {
   margin-top: 5px;
 }
-/* line 8, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 9, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page h3, #source-sans-page h4 {
   margin-top: 15px;
 }
-/* line 9, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 10, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page h5, #source-sans-page h6 {
   margin-top: 15px;
 }
-/* line 11, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 12, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page .hero_text_bold {
   font-size: 48px;
   line-height: 60px;
   font-weight: 600;
   color: #1a1a1a;
 }
-/* line 15, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
+/* line 16, ../../assets/stylesheets/partials_and_pages/_source_sans_page.scss */
 #source-sans-page .hero_text_thin {
   font-size: 48px;
   line-height: 60px;
