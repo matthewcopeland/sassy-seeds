@@ -1,0 +1,12 @@
+#exo-page {
+	h1 {margin-top:20px;}
+	h2 {margin-top:10px;}
+ 	h3, h4 {margin-top:20px;} 	
+ 	h5, h6 {margin-top:20px;}
+	.hero_text_bold {
+		@include typestyle( hero-thick );
+		}
+	.hero_text_thin {
+		@include typestyle( hero-thin );
+		}
+}
