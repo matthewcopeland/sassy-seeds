@@ -21,6 +21,6 @@ get '/exo' do
 	haml :exo, :layout => :'layouts/application'
 end
 
-get '/source_sans' do
-	haml :source_sans, :layout => :'layouts/application'
+get '/source-sans' do
+	haml :source-sans, :layout => :'layouts/application'
 end
