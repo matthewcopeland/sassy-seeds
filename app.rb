@@ -16,3 +16,11 @@ set :haml, {:format => :html5} # default Haml format is :xhtml
 get '/' do
   haml :styleguide, :layout => :'layouts/application'
 end
+
+get '/exo' do
+	haml :exo, :layout => :'layouts/application'
+end
+
+get '/source_sans' do
+	haml :source_sans, :layout => :'layouts/application'
+end

@@ -1,0 +1,18 @@
+#exo-page {
+	max-width:1020px;
+	padding-left:40px;
+ 	padding-right:40px;
+ 	padding-top:10px;
+	h1 {margin-top:20px;}
+	h2 {margin-top:10px;}
+ 	h3, h4 {margin-top:20px;} 	
+ 	h5, h6 {margin-top:20px;}
+
+	.hero_text_bold {
+		@include typestyle( hero-thick );
+	}//.hero_text_bold
+
+	.hero_text_thin {
+		@include typestyle( hero-thin );
+	}//.hero_text_thin
+}//#exo-page

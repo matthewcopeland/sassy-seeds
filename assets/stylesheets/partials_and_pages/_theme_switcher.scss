@@ -15,12 +15,18 @@ $mobile-theme-switcher-extra-body-height: 90px;
   border-top: $bevel-light-border;
   @include border-radius( $border-radius 0 0 $border-radius );
   @include box-shadow( -1px 1px 10px 0 rgba(0,0,0, .4) );
+  
+  span {
+    display:inline-block;
+    margin-bottom:5px;
+  }//span
 
   li {
     display: inline-block;
     @include button( $type: multibutton );
     &.selected { @include button-bg-active; }
   }//li
+
 }//#theme-switcher
 
 
