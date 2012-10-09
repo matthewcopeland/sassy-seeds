@@ -1,17 +1,15 @@
 #main-header {
   @include header-style;
-
   h1 {margin-right:10px;}
   h1, nav { display: inline-block; }
-
-  nav a {
-    display: inline-block;
-    padding: 3px 10px;
-    text-align: center;
-    @include nav-link;
-  }//nav a
-
 }//#main-header
+
+nav a {
+  display: inline-block;
+  padding: 3px 10px;
+  text-align: center;
+  @include nav-link;
+}//nav a
 
 @mixin header-rwd {
   #main-header {
