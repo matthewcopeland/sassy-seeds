@@ -27,6 +27,8 @@
 @mixin hr-style {
   border-top: $bevel-dark-border;
   border-bottom: $bevel-light-border;
+  border-right: none;
+  border-left: none;
 }//@mixin
 
 @mixin em-style { font-style: $em-font-style; }
@@ -45,5 +47,6 @@ $blockquote-padding: 20px 10px;
 }//@mixin
 
 @mixin code-style {
+  overflow: hidden;
   @include typestyle( codecopy );
 }//@mixin
