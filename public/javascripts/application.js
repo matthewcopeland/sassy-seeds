@@ -5,15 +5,13 @@ $(document).ready(function() {
   theme_switch.click(function() {
     var stylesheet_name = $(this).attr("rel");
     var oldStyleSheet = $('link[rel=stylesheet]');
-    $('body').fadeOut(500, function(){
-      oldStyleSheet.delay(1000).remove();
+    $('html').fadeOut(500, function(){
+      oldStyleSheet.delay(500).remove();
     }).delay(500).fadeIn(500);
 
     $("head").after("<link rel=\"stylesheet\" type=\"text\/css\" href=\"\/stylesheets\/" + stylesheet_name + ".css\" \/>");
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
-
-
   });
 
   // active events in mobile webkit.
