@@ -14,13 +14,17 @@ set :haml, {:format => :html5} # default Haml format is :xhtml
 
 # Application routes
 get '/' do
-  haml :styleguide, :layout => :'layouts/application'
+  haml :'styleguide/index', :layout => :'layouts/application'
 end
 
 get '/exo' do
-	haml :exo, :layout => :'layouts/application'
+	haml :'styleguide/typography/exo', :layout => :'layouts/application'
 end
 
 get '/source_sans' do
-	haml :source_sans, :layout => :'layouts/application'
+	haml :'styleguide/typography/source_sans', :layout => :'layouts/application'
+end
+
+get '/background_tool' do
+  haml :'background_tool/index', :layout => :'layouts/application'
 end
