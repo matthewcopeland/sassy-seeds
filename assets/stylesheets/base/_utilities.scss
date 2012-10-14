@@ -41,11 +41,11 @@
 //-------------------------------------------------
 // centering absolute or fixed position elements.
 //
-@mixin vertical-middle( $height: "" ) {
+@mixin vertical-middle( $height ) {
   top: 50%;
   margin-top: -($height/2);
 }//@mixin
-@mixin horizontal-center( $width: "" ) {
+@mixin horizontal-center( $width ) {
   left: 50%;
   margin-left: -($width/2);
 }//@mixin
@@ -64,7 +64,9 @@
     &:not(:first-of-type) { border-left: $light-border; }
     &:not(:last-of-type) { border-right: $dark-border; }
   }//@if
+
 }//@mixin
+
 
 @mixin bevel-kill( $direction ) {
   @if $direction == vertical {
