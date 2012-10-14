@@ -9,5 +9,12 @@
 } // #main-footer
 
 @mixin footer-rwd {
-  #main-footer { padding-bottom: $mobile-theme-switcher-extra-body-height; }
+  #main-footer {
+    padding-bottom: $mobile-theme-switcher-extra-body-height;
+    nav a {
+      display: block;
+      padding: 10px 0;
+      @include bevel-kill( horizontal );
+    }//nav a
+  }
 }//@mixin
