@@ -1,0 +1,45 @@
+#background-tool-page
+  %h1 Background Tool
+
+
+  #base64encoder
+    %h2 .background.image
+    %fieldset
+      %code#base64string
+    %p
+      :plain
+        #base64encoder
+      { origin:
+      %a{:href => "https://github.com/dmackerman/base64-encoder"} dave ackerman
+      }
+
+    #holder
+      %h2#status Your browser kinda sucks. File API & FileReader API are not supported by your browser.
+  %hr
+
+  #background-changer
+    %h2 .background.color
+    %form.solid-bg>
+      %h3 .solid
+      %fieldset
+        %label{:for => "solid-bg-color"} Color
+        %input#solid-bg-color{:type => "text", :value => "#ff0000"}/
+      %fieldset
+        %button#solid-bg-submit.color-submit{:href => "#", :type => "button"} Apply Solid
+
+    %form.gradient-bg>
+      %h3 .gradient
+      %fieldset
+        %label{:for => "gradient-angle"} Angle
+        %input#gradient-angle{:type => "text", :value => "-90deg"}/
+      %fieldset
+        %label{:for => "gradient-stop-1"} Stop 1
+        %input#gradient-stop-1{:type => "text", :value => "#ffa500"}/
+      %fieldset
+        %label{:for => "gradient-stop-2"} Stop 2
+        %input#gradient-stop-2{:type => "text", :value => "#ff0000"}/
+      %fieldset
+        %button#gradient-submit.color-submit{:href => "#", :type => "button"} Apply Gradient
+
+
+%script{:src => "/javascripts/background_tool.js"}
