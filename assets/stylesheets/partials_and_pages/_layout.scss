@@ -1,13 +1,17 @@
-$page-padding: 20px;
-#main-header, #main, #main-footer { padding: $page-padding; }
+//------------------------------------------
+// global positional styles
 
+$page-padding: 20px;
+$gutter: 20px;
+#main-header, #main, #main-footer { padding: $gutter $page-padding; }
+hr { margin: $gutter auto; }
 
 // set to true to choose use a fixed-width
 $fixedwidth: false;
 $fixed-width-size: 980px;
 
 @if $fixedwidth == true {
-  body { 
+  body {
     position: relative;
     width: $fixed-width-size;
     margin: 20px auto;

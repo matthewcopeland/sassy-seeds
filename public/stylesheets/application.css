@@ -558,9 +558,14 @@ th, td {
   content: "\25C9";
 }
 
-/* line 2, ../../assets/stylesheets/partials_and_pages/_layout.scss */
+/* line 6, ../../assets/stylesheets/partials_and_pages/_layout.scss */
 #main-header, #main, #main-footer {
-  padding: 20px;
+  padding: 20px 20px;
+}
+
+/* line 7, ../../assets/stylesheets/partials_and_pages/_layout.scss */
+hr {
+  margin: 20px auto;
 }
 
 /* line 1, ../../assets/stylesheets/partials_and_pages/_header.scss */
@@ -1079,11 +1084,7 @@ nav a:not(:last-of-type) {
 #background-tool-page h1 {
   margin-bottom: 40px;
 }
-/* line 7, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
-#background-tool-page hr {
-  margin: 20px auto;
-}
-/* line 10, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 9, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer form {
   position: relative;
   display: inline-block;
@@ -1098,34 +1099,34 @@ nav a:not(:last-of-type) {
 #background-tool-page #background-changer form:not(:last-of-type) {
   border-right: 1px solid rgba(0, 0, 0, 0.6);
 }
-/* line 16, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 15, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer form.solid-bg {
   padding-right: 25px;
 }
-/* line 17, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 16, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer form.gradient-bg {
   padding-left: 25px;
 }
-/* line 20, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 19, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer fieldset {
   width: 250px;
   margin: 5px auto;
 }
-/* line 25, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 24, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer label, #background-tool-page #background-changer input {
   display: block;
 }
-/* line 26, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 25, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #background-changer input {
   width: 100%;
   text-align: center;
 }
-/* line 33, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 32, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page .color-submit {
   position: relative;
   width: 100%;
 }
-/* line 38, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 37, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #holder {
   width: 75%;
   margin: 20px auto;
@@ -1145,11 +1146,11 @@ nav a:not(:last-of-type) {
   -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-/* line 45, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 44, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #holder.hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* line 48, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 47, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #status {
   font-size: 26px;
   line-height: 34px;
@@ -1158,11 +1159,11 @@ nav a:not(:last-of-type) {
   padding: 80px 0;
   vertical-align: middle;
 }
-/* line 52, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 51, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #status.fail {
   color: #5a1110;
 }
-/* line 55, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+/* line 54, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
 #background-tool-page #base64string {
   display: none;
   width: 250px;
@@ -1253,16 +1254,16 @@ nav a:not(:last-of-type) {
     border-right: none;
   }
 
-  /* line 67, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+  /* line 66, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
   #background-tool-page #holder {
     width: 100%;
   }
-  /* line 69, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+  /* line 68, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
   #background-tool-page #background-changer form {
     display: block;
     height: auto;
   }
-  /* line 72, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+  /* line 71, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
   #background-tool-page #background-changer form.solid-bg, #background-tool-page #background-changer form.gradient-bg {
     padding: 20px 0 0 0;
   }
@@ -1274,7 +1275,7 @@ nav a:not(:last-of-type) {
   #background-tool-page #background-changer form, #background-tool-page #background-changer form:not(:last-of-type) {
     border-right: none;
   }
-  /* line 75, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
+  /* line 74, ../../assets/stylesheets/partials_and_pages/_background_tool.scss */
   #background-tool-page #background-changer fieldset {
     width: 100%;
   }
