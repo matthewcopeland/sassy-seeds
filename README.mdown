@@ -1,20 +1,23 @@
 # Sassy-Seeds
 
-## A sass/haml resource for clean white-label applications.
+## A sass resource for clean/consistent white-label applications.
 
-Sassy-seeds uses a standard module for sass to separate visual and positional styling and avoid adding classes to the semantic markup. The standard module allows you to copy the generic visual-stylesheets and use them with any sass/compass compatible application.
+Sassyseeds uses a standard module for sass to separate visual and positional styling to avoid cluttering semantic markup. The standard module allows you to consistently control visual-styles by utilizing mixins and variables.
 
-Built with:
+## What is this for?
 
-* [Sinatra Bootstrap](http://github.com/adamstac/sinatra-bootstrap/)
-* [Haml](http://haml-lang.com/)
-* [Sass](http://sass-lang.com/)
-* [Compass](https://github.com/chriseppstein/compass)
-* [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
-* [Meyer Reset](https://github.com/adamstac/meyer-reset)
-* [jQuery](http://jquery.com/)
-* [Modernizr](http://www.modernizr.com/)
+* Simple clean style to keep focus off of visual design.
 
+* Development begins before visual styles have are complete.
+
+
+## How do I use this?
+
+* Grab a 1-stylesheet and go.
+
+* Create new themes.
+
+* Customize the element styles.
 
 ## References and inspiration
 
@@ -28,6 +31,18 @@ A prime example of how to use of variables to create an intuitive visual-theme i
 [Zurb Foundation for sass and compass](https://github.com/zurb/foundation-sass) - As far as flexible frameworks go, Zurb has it down.
 
 [Solarized](https://github.com/altercation/solarized) precision colors by [Ethan Schoonover](http://ethanschoonover.com).
+
+## Built on:
+
+* [Sinatra Bootstrap](http://github.com/adamstac/sinatra-bootstrap/)
+* [Haml](http://haml-lang.com/)
+* [Sass](http://sass-lang.com/)
+* [Compass](https://github.com/chriseppstein/compass)
+* [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
+* [Meyer Reset](https://github.com/adamstac/meyer-reset)
+* [jQuery](http://jquery.com/)
+* [Modernizr](http://www.modernizr.com/)
+
 
 ## Basic Startup
 
