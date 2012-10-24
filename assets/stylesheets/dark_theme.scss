@@ -2,8 +2,8 @@
 // keep these files in this order.
 
 // google fonts/external files must be imported in the root file.
-// remove the calls to typefaces you're not using for faster load time once you go live.
-@import url(http:/\/fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Exo:200,300,400,500,600,700,800,900,200italic,300italic,400italic,500italic,600italic,900italic,800italic,700italic);
+@import url(http:/\/fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,300italic,400italic,500italic,600italic,700italic,800italic,900italic,200italic,100italic);
+
 @import "compass/utilities";
 @import "compass/css3";
 @import "compass/css3/user-interface";
@@ -14,8 +14,9 @@
 @import "base";
 
 //-------------------------------
-// use the base-variables in a selected theme.
-@import "themes/monochrome_theme";
+// themes use the base variables
+// light low-contrast theme
+@import "themes/dark_monochrome_theme";
 
 //-------------------------------
 // define visual styles

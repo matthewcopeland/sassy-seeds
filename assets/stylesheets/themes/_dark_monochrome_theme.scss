@@ -1,11 +1,36 @@
-// low-contrast theme switcher.
+//-----------------------------------------
+// light monochrome
+// $h136-color: $h136-dark-text-color;
+// $h245-color: $h245-dark-text-color;
+// $bodycopy-color: $bodycopy-dark-text-color;
+// $body-text-shadow: $light-text-shadow;
+// $body-bg-color: $off-white;
+// $bevel-color-light: rgba( $white, .8);
+// $bevel-color-dark: rgba(0,0,0, 0.2);
+// $bevel-light-border: 1px solid $bevel-color-light;
+// $bevel-dark-border: 1px solid $bevel-color-dark;
+//-------------------------------------
+
+//-----------------------------------------
+// dark monochrome
 //
-// uncomment one of the theme sets below.
-// the major variables are all driven from the colors listed.
+// uncomment these variables to view the changes
+//
+$h136-color: $h136-light-text-color;
+$h245-color: $h245-light-text-color;
+$bodycopy-color: $bodycopy-light-text-color;
+$body-text-shadow: $dark-text-shadow;
+$body-bg-color: #333;
+$bevel-color-light: rgba($white, 0.1);
+$bevel-color-dark: rgba(0,0,0, 0.6);
+$bevel-light-border: 1px solid $bevel-color-light;
+$bevel-dark-border: 1px solid $bevel-color-dark;
+//-----------------------------------------
 
 
 //-----------------------------------------
-// universal low-contrast theme properties
+// universal monochrome
+
 // body
 $body-bg-texture: $noise;
 $body-bg: $body-bg-color $body-bg-texture;
